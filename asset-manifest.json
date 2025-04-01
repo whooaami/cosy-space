@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cosy-space/static/css/main.3283acd1.css",
-    "main.js": "/cosy-space/static/js/main.fd8b515c.js",
+    "main.css": "/cosy-space/static/css/main.f411cf4a.css",
+    "main.js": "/cosy-space/static/js/main.2bdd1b3b.js",
     "static/js/453.37ceee0d.chunk.js": "/cosy-space/static/js/453.37ceee0d.chunk.js",
     "static/media/space.jpg": "/cosy-space/static/media/space.efefe2e97b572aed93d1.jpg",
     "index.html": "/cosy-space/index.html",
-    "main.3283acd1.css.map": "/cosy-space/static/css/main.3283acd1.css.map",
-    "main.fd8b515c.js.map": "/cosy-space/static/js/main.fd8b515c.js.map",
+    "main.f411cf4a.css.map": "/cosy-space/static/css/main.f411cf4a.css.map",
+    "main.2bdd1b3b.js.map": "/cosy-space/static/js/main.2bdd1b3b.js.map",
     "453.37ceee0d.chunk.js.map": "/cosy-space/static/js/453.37ceee0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3283acd1.css",
-    "static/js/main.fd8b515c.js"
+    "static/css/main.f411cf4a.css",
+    "static/js/main.2bdd1b3b.js"
   ]
 }
