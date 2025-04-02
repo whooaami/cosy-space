@@ -1,5 +1,6 @@
 import '../App.css';
 import spaceImage from '../assets/space.jpg';
+import whiteLogoImage from '../assets/white-logo.png';
 
 function Hero() {
   return (
@@ -11,13 +12,18 @@ function Hero() {
       >
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[rgba(0,0,0,0.7)] w-[1100px] h-full z-0"></div>
         
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center justify-center w-[850px] h-full text-center text-white">
-          <h1 className="text-4xl">NEED A PLACE TO WORK?</h1>
-          <p className="text-6xl font-bold mt-2">
-            Cosy <br />
-            <span className="text-yellow-500" style={{ fontFamily: 'Brittany, sans-serif' }}>space</span>
-          </p>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-10 w-[850px] h-full text-center text-white">
+          <h1 className="text-4xl absolute top-40 left-1/2 transform -translate-x-1/2">
+            NEED A PLACE TO WORK?
+          </h1>
+          <img 
+            src={whiteLogoImage}
+            alt="Cosy Space Logo"
+            className="absolute left-1/2 transform -translate-x-1/2"
+            style={{ width: '700px', height: 'auto', top: 'calc(50% - 150px)', position: 'absolute' }}
+          />
         </div>
+
       </div>
 
       <div className="w-full h-1/2 bg-white flex items-center justify-center">
@@ -53,7 +59,7 @@ function Hero() {
           {/* Ліва частина - фото */}
           <div className="w-1/2">
             <img
-              src={spaceImage}  // Правильне використання імпорту зображення
+              src={spaceImage}
               alt="Work Space"
               className="w-full h-auto rounded-lg shadow-lg"
             />
