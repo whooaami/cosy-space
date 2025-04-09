@@ -1,80 +1,102 @@
 import '../App.css';
 import spaceImage from '../assets/space.jpg';
 import whiteLogoImage from '../assets/white-logo.png';
+import bookNowImage from '../assets/book-now.png';
+import officeImage from '../assets/office.png';
 
 function Hero() {
   return (
-    <div className="relative w-full h-screen bg-black">
-      {/* Верхня половина з фоновим зображенням */}
+    <div className="relative w-full flex flex-col">
+      {/* Hero section with background image */}
       <div
-        className="relative w-full h-1/2 bg-cover bg-center"
+        className="relative w-full h-[80vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${spaceImage})` }}
       >
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-[rgba(0,0,0,0.7)] w-[1100px] h-full z-0"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 z-10 w-[850px] h-full text-center text-white">
-          <h1 className="text-4xl absolute top-40 left-1/2 transform -translate-x-1/2">
-            NEED A PLACE TO WORK?
-          </h1>
-          <img 
-            src={whiteLogoImage}
-            alt="Cosy Space Logo"
-            className="absolute left-1/2 transform -translate-x-1/2"
-            style={{ width: '700px', height: 'auto', top: 'calc(50% - 150px)', position: 'absolute' }}
-          />
-        </div>
-
-      </div>
-
-      <div className="w-full h-1/2 bg-white flex items-center justify-center">
-        <div
-          className="absolute top-[560px] h-[300px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-8 text-center text-white w-3/4 md:w-[750px] shadow-lg"
-          style={{ backgroundColor: '#dfaa04' }}
-        >
-          <h2 className="text-4xl font-bold">CO-WORKING</h2>
-          <div className="my-4 border-t-2 border-white w-1/3 mx-auto"></div>
-          <p className="mt-2 text-2xl">
-            ЗАТИШНИЙ <br />
-            ПРОСТІР ДЛЯ <br />
-            ТВОГО РОЗВИТКУ!
-          </p>
-          <div className="my-4 border-t-2 border-white w-1/3 mx-auto"></div>
-          <div className="mt-4 bg-black w-1/3 text-white py-2 px-4 font-bold inline-block">
-            +380 67 581 43 80
-            <p className="mt-2 text-sm inline-block border-b-2">COSY-SPACE.COM</p>
-          </div>
-        </div>
-        <div className="absolute top-[770px] w-full text-center text-black">
-          <h3 className="text-2xl font-bold mt-4">Visit our space:</h3>
-          <p className="mt-2 font-bold mt-4">вул. Стрийська 111Д, оф. 56, м. Львів</p>
-        </div>
-      </div>
-
-      {/* Новий блок з темно-сірим фоном та фото зліва */}
-      <div 
-        className="w-full py-20"
-        style={{ backgroundColor: '#1d1d1d' }}
-      >
-        <div className="flex items-center justify-center space-x-12 px-12"> {/* Додано px-12 для відступів */}
-          {/* Ліва частина - фото */}
-          <div className="w-1/2">
+        {/* Content overlay */}
+        <div className="relative h-full flex flex-col items-center justify-center text-white z-10 px-4">
+          {/* House icon */}
+          <div className="mb-2">
             <img
-              src={spaceImage}
-              alt="Work Space"
-              className="w-full h-auto rounded-lg shadow-lg"
+              src={officeImage}
+              alt="Office"
+              className="w-32 md:w-40 lg:w-48"
             />
           </div>
           
-          {/* Права частина - текст */}
-          <div className="w-1/2 text-white">
-            <h2 className="text-4xl font-bold mb-4">Наш коворкінг</h2>
-            <p className="text-xl mb-4">
-              Це ідеальне рішення для тих, хто цінує працю в комфортному та стимулюючому середовищі. Швидкий інтернет, зручні робочі місця та безпека.
-            </p>
-            <p className="text-lg">
-              Усе це робить наш простір ідеальним вибором для фрілансерів, стартапів та бізнес-команд. Приєднуйтесь до нашої спільноти та розкривайте свій творчий потенціал разом з нами!
-            </p>
+          {/* Main heading */}
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-light mt-2 mb-6">
+            NEED A PLACE TO WORK?
+          </h1>
+          
+          {/* Logo */}
+          <div className="mt-4">
+            <img 
+              src={whiteLogoImage} 
+              alt="Cosy Space Logo" 
+              className="w-48 md:w-64 lg:w-72" 
+            />
           </div>
+        </div>
+      </div>
+
+      {/* Content section */}
+      <div className="w-full bg-white py-16 flex flex-col items-center">
+        {/* Yellow card */}
+        <div
+          className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 text-center text-white shadow-lg relative -mt-32 md:-mt-40"
+          style={{ backgroundColor: '#dfaa04' }}
+        >
+          {/* Book Now button */}
+          <div className="absolute top-4 right-4 w-24 md:w-32 lg:w-36">
+            <img
+              src={bookNowImage}
+              alt="Book Now"
+              className="w-full"
+            />
+          </div>
+          
+          {/* Co-working heading */}
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light mt-4 mb-2">CO-WORKING</h2>
+          
+          {/* Divider */}
+          <div className="my-4 border-t border-white w-1/3 mx-auto"></div>
+          
+          {/* Ukrainian text */}
+          <p className="mt-2 text-xl md:text-2xl font-light">
+            ЗАТИШНИЙ<br />
+            ПРОСТІР ДЛЯ<br />
+            ТВОГО РОЗВИТКУ!
+          </p>
+          
+          {/* Divider */}
+          <div className="my-4 border-t border-white w-1/3 mx-auto"></div>
+          
+          {/* Contact info */}
+          <div className="mt-6">
+            <div className="bg-black text-white py-2 px-8 inline-block">
+              <div className="text-sm md:text-base">+380 67 581 43 80</div>
+              <div className="text-xs md:text-sm">COSY-SPACE.COM</div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Ukrainian heading */}
+        <div className="w-full max-w-4xl mx-auto mt-20 px-4 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-8">
+            Наш коворкінг
+          </h2>
+          
+          <p className="text-base md:text-lg text-black max-w-3xl mx-auto">
+            Це ідеальне рішення для тих, хто цінує працю в комфортному
+            та стимулюючому середовищі. Швидкий інтернет, зручні робочі
+            місця та безпека – усе це робить наш простір ідеальним вибором
+            для фрілансерів, стартапів та бізнес-команд. Приєднуйтесь до нашої
+            спільноти та розкривайте свій творчий потенціал разом з нами!
+          </p>
+          
+          <div className="w-full max-w-md mx-auto border-t border-gray-300 mt-12"></div>
         </div>
       </div>
     </div>
