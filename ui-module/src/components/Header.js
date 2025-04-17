@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
+import whiteLogo from "../assets/white-logo-1.png";
+import blackLogo from "../assets/black-logo-1.png";
+
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +28,16 @@ function Header() {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <h1 className={`text-2xl font-bold ${isScrolled ? "text-black" : "text-white"}`}>
+        {/* <h1 className={`text-2xl font-bold ${isScrolled ? "text-black" : "text-white"}`}>
           Cosy Space
-        </h1>
+        </h1> */}
+        <a href="#">
+          <img
+            src={isScrolled ? whiteLogo : blackLogo}
+            alt="Cosy Space Logo"
+            className="h-10 w-auto transition-all duration-300"
+          />
+        </a>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex">

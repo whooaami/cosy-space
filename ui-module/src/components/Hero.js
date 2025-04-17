@@ -1,6 +1,6 @@
 import '../App.css';
 import spaceImage from '../assets/space.jpg';
-import whiteLogoImage from '../assets/white-logo.png';
+import whiteLogoImage from '../assets/black-logo-1.png';
 import bookNowImage from '../assets/book-now.png';
 import officeImage from '../assets/office.png';
 

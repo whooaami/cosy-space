@@ -6,7 +6,7 @@ function Reviews() {
       id: 1,
       name: "William Anderson",
       title: "Web Designer",
-      avatar: "/api/placeholder/64/64",
+      avatar: "https://gravatar.com/images/homepage/avatar-01.png",
       rating: 5,
       text: "OceanWP theme has helped my WooCommerce website. This template lets me start a camera store and customize it all in minutes."
     },
@@ -14,7 +14,7 @@ function Reviews() {
       id: 2,
       name: "Mark Wolf",
       title: "Web Designer",
-      avatar: "/api/placeholder/64/64",
+      avatar: "https://gravatar.com/images/homepage/avatar-04.png",
       rating: 5,
       text: "OceanWP WordPress theme has really helped propel my eCommerce website. With the use of templates, I can start my brand new store within minutes and customize it completely from top to bottom."
     },
@@ -22,7 +22,7 @@ function Reviews() {
       id: 3,
       name: "Olivia Rodriguez",
       title: "Web Designer",
-      avatar: "/api/placeholder/64/64",
+      avatar: "https://gravatar.com/images/homepage/avatar-02.png",
       rating: 5,
       text: "OceanWP WordPress theme has really helped propel my eCommerce website. With the use of templates, I can start my brand new store within minutes and customize it completely from top to bottom."
     },
@@ -30,7 +30,7 @@ function Reviews() {
       id: 4,
       name: "Emma Johnson",
       title: "Web Designer",
-      avatar: "/api/placeholder/64/64",
+      avatar: "https://gravatar.com/images/homepage/avatar-07.png",
       rating: 5,
       text: "OceanWP theme has helped my WooCommerce website. This template lets me start a camera store and customize it all in minutes."
     }
