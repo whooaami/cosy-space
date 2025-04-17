@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cosy-space/static/css/main.a773e976.css",
-    "main.js": "/cosy-space/static/js/main.b4a82bf1.js",
+    "main.css": "/cosy-space/static/css/main.b553b45e.css",
+    "main.js": "/cosy-space/static/js/main.2f8e23f3.js",
     "static/js/453.37ceee0d.chunk.js": "/cosy-space/static/js/453.37ceee0d.chunk.js",
     "static/media/space.jpg": "/cosy-space/static/media/space.efefe2e97b572aed93d1.jpg",
     "static/media/work-place.jpg": "/cosy-space/static/media/work-place.e51bc7f1fdf35e09bcbe.jpg",
@@ -9,16 +9,17 @@
     "static/media/workspaces.jpg": "/cosy-space/static/media/workspaces.8865b97c4ba593466a45.jpg",
     "static/media/pc-setup.jpg": "/cosy-space/static/media/pc-setup.81314adb9ddf906f03a7.jpg",
     "static/media/coffee-machine.jpeg": "/cosy-space/static/media/coffee-machine.f774879520b0aaa774a1.jpeg",
+    "static/media/white-logo-1.png": "/cosy-space/static/media/white-logo-1.1daf746ec4fc8ac47796.png",
+    "static/media/black-logo-1.png": "/cosy-space/static/media/black-logo-1.55297e18defb15975f7d.png",
     "static/media/security-system.avif": "/cosy-space/static/media/security-system.9064bdc968bde4643e8a.avif",
-    "static/media/white-logo.png": "/cosy-space/static/media/white-logo.8d538752b64dd3178abe.png",
     "static/media/book-now.png": "/cosy-space/static/media/book-now.247ca209044101c533af.png",
     "index.html": "/cosy-space/index.html",
-    "main.a773e976.css.map": "/cosy-space/static/css/main.a773e976.css.map",
-    "main.b4a82bf1.js.map": "/cosy-space/static/js/main.b4a82bf1.js.map",
+    "main.b553b45e.css.map": "/cosy-space/static/css/main.b553b45e.css.map",
+    "main.2f8e23f3.js.map": "/cosy-space/static/js/main.2f8e23f3.js.map",
     "453.37ceee0d.chunk.js.map": "/cosy-space/static/js/453.37ceee0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a773e976.css",
-    "static/js/main.b4a82bf1.js"
+    "static/css/main.b553b45e.css",
+    "static/js/main.2f8e23f3.js"
   ]
 }
