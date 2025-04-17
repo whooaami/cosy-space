@@ -9,7 +9,7 @@ function Hero() {
     <div className="relative w-full flex flex-col">
       {/* Hero section with background image */}
       <div
-        className="relative w-full h-[80vh] bg-cover bg-center"
+        className="relative w-full h-[70vh] bg-cover bg-center"
         style={{ backgroundImage: `url(${spaceImage})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -45,7 +45,7 @@ function Hero() {
       <div className="w-full bg-white py-16 flex flex-col items-center">
         {/* Yellow card */}
         <div
-          className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 text-center text-white shadow-lg relative -mt-32 md:-mt-40 rounded-lg"
+          className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 border-2 border-white text-center text-white shadow-lg relative -mt-32 md:-mt-40 rounded-lg"
           style={{ backgroundColor: '#eeba2b' }}
         >
           {/* Book Now button */}

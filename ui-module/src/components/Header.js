@@ -85,6 +85,11 @@ function Header() {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-white text-black flex flex-col items-center py-6 shadow-md md:hidden">
+            <img
+              src={whiteLogo}
+              alt="Cosy Space Logo"
+              className="h-10 w-auto transition-all duration-300"
+            />
             <a href="#services" className="py-2 text-lg" onClick={() => setIsMenuOpen(false)}>
               Послуги
             </a>

@@ -54,7 +54,7 @@ function Reviews() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl text-amber-500 font-medium mb-2 uppercase tracking-wider">ВІДГУКИ</h1>
+          <h1 className="text-4xl text-[#eeba2b] font-medium mb-2 uppercase tracking-wider">ВІДГУКИ</h1>
           <h1 className="text-4xl font-bold text-gray-900">Що про нас говорять</h1>
         </div>
 
