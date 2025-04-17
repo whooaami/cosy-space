@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,25 +28,70 @@ function Header() {
         <h1 className={`text-2xl font-bold ${isScrolled ? "text-black" : "text-white"}`}>
           Cosy Space
         </h1>
-        <nav>
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex">
           <ul className="flex space-x-6">
             <li>
-              <a href="#" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
-                Home
+              <a href="#services" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                Послуги
               </a>
             </li>
             <li>
-              <a href="#" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
-                About
+              <a href="#advantages" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                Переваги
               </a>
             </li>
             <li>
-              <a href="#" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
-                Contact
+              <a href="#gallery" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                Галерея
+              </a>
+            </li>
+            <li>
+              <a href="#price" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                Вартість
+              </a>
+            </li>
+            <li>
+              <a href="#contactUs" className={`text-lg ${isScrolled ? "text-black" : "text-white"}`}>
+                Контакти
               </a>
             </li>
           </ul>
         </nav>
+
+        {/* Mobile menu button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden focus:outline-none z-50"
+        >
+          {isMenuOpen ? (
+            <X size={28} className={isScrolled ? "text-black" : "text-white"} />
+          ) : (
+            <Menu size={28} className={isScrolled ? "text-black" : "text-white"} />
+          )}
+        </button>
+
+        {/* Mobile menu */}
+        {isMenuOpen && (
+          <div className="absolute top-full left-0 w-full bg-white text-black flex flex-col items-center py-6 shadow-md md:hidden">
+            <a href="#services" className="py-2 text-lg" onClick={() => setIsMenuOpen(false)}>
+              Послуги
+            </a>
+            <a href="#advantages" className="py-2 text-lg" onClick={() => setIsMenuOpen(false)}>
+              Переваги
+            </a>
+            <a href="#gallery" className="py-2 text-lg" onClick={() => setIsMenuOpen(false)}>
+              Галерея
+            </a>
+            <a href="#price" className="py-2 text-lg" onClick={() => setIsMenuOpen(false)}>
+              Вартість
+            </a>
+            <a href="#contactUs" className="py-2 text-lg" onClick={() => setIsMenuOpen(false)}>
+              Контакти
+            </a>
+          </div>
+        )}
       </div>
     </header>
   );

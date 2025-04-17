@@ -11,7 +11,7 @@ function Additional() {
         <div className="max-w-6xl mx-auto">
           <div className="border-2 border-black rounded-[40px] overflow-hidden flex flex-col md:flex-row">
             {/* Left side - Text */}
-            <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center">
+            <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center text-left">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Події та заходи
               </h2>
@@ -36,11 +36,11 @@ function Additional() {
       <div className="w-full h-16 md:h-24 bg-white"></div>
       
       {/* Workspaces Section - Black background */}
-      <div className="w-full bg-black py-16 px-4">
+      <div id='advantages' className="w-full bg-black py-16 px-4" style={{ backgroundColor: '#1D1D1D' }}>
         <div className="max-w-6xl mx-auto">
           <div className="border-2 border-white rounded-[40px] overflow-hidden flex flex-col md:flex-row">
             {/* Left side - Text */}
-            <div className="w-full md:w-1/2 p-6 md:p-10 text-white">
+            <div className="w-full md:w-1/2 p-6 md:p-10 text-white text-left">
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 РОБОЧІ МІСЦЯ
               </h2>
@@ -67,14 +67,14 @@ function Additional() {
       </div>
       
       {/* Spacer */}
-      <div className="w-full h-16 md:h-24 bg-black"></div>
+      <div className="w-full h-16 md:h-24 bg-black" style={{ backgroundColor: '#1D1D1D' }}></div>
       
       {/* Security Section - Black background */}
-      <div className="w-full bg-black py-16 px-4 pb-32">
+      <div className="w-full bg-black py-16 px-4 pb-32" style={{ backgroundColor: '#1D1D1D' }}>
         <div className="max-w-6xl mx-auto">
           <div className="border-2 border-white rounded-[40px] overflow-hidden flex flex-col md:flex-row-reverse">
             {/* Right side - Text */}
-            <div className="w-full md:w-1/2 p-6 md:p-10 text-white">
+            <div className="w-full md:w-1/2 p-6 md:p-10 text-white text-left">
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 БЕЗПЕКА
               </h2>

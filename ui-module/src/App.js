@@ -3,6 +3,9 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Additional from "./components/Additional";
 import Information from "./components/Information";
+import Price from "./components/Price";
+import Reviews from "./components/Reviews";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Features />
       <Additional />
       <Information />
+      <Price />
+      <Reviews />
+      <ContactUs />
     </div>
   );
 }

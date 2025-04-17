@@ -5,9 +5,9 @@ import computerSetupImage from '../assets/pc-setup.jpg';
 
 function Features() {
   return (
-    <div className="w-full">
+    <div id='home' className="w-full">
       {/* Black section with office image and description */}
-      <div className="w-full bg-black py-16 md:py-24 px-4">
+      <div className="w-full bg-black py-16 md:py-24 px-4" style={{ backgroundColor: '#1D1D1D' }}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
           {/* Left side - Office image */}
           <div className="w-full md:w-1/2 mb-10 md:mb-0">
@@ -22,7 +22,7 @@ function Features() {
           
           {/* Right side - Text description */}
           <div className="w-full md:w-1/2 md:pl-10">
-            <div className="bg-black text-white rounded-3xl border-2 border-white p-6 md:p-8">
+            <div className="bg-black text-white rounded-3xl border-2 border-white p-6 md:p-8" style={{ backgroundColor: '#1D1D1D' }}>
               <h2 className="text-2xl md:text-3xl font-bold text-yellow-500 mb-4">
                 Комфортний і привабливий простір
               </h2>
@@ -46,11 +46,11 @@ function Features() {
       </div>
 
       {/* Features section with two columns */}
-      <div className="w-full bg-white py-12 md:py-16 px-4">
+      <div id='services' className="w-full bg-white py-12 md:py-16 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
           {/* Left column - Best services */}
           <div className="w-full md:w-1/2 pr-0 md:pr-8">
-            <div className="border-2 border-black rounded-3xl p-6 md:p-8">
+            <div className="border-2 border-black rounded-3xl p-6 md:p-8 text-left">
               <h3 className="text-xl md:text-2xl font-bold text-yellow-500 mb-6">
                 НАЙКРАЩІ ПОСЛУГИ
               </h3>

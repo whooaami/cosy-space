@@ -9,7 +9,7 @@ function Information() {
     <div className="flex flex-col w-full bg-white font-sans">
       {/* Amenities Section */}
       <div className="py-8 px-4 md:px-16 lg:px-24 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-left">
           <div>
             <h3 className="font-bold text-lg uppercase mb-6 text-center md:text-left">КУХНЯ</h3>
             <ul className="list-disc pl-5 space-y-2">
@@ -85,25 +85,27 @@ function Information() {
       </div>
       
       {/* Facilities Section - using the exact color #eeba2b */}
-      <div className="w-full py-6 px-4 md:px-16 lg:px-24" style={{ backgroundColor: '#eeba2b' }}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="font-bold text-lg uppercase mb-4">ВІДПОЧИНОК</h3>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Лаунж зона з диваном та OLED TV</li>
-              <li>PlayStation 5</li>
-              <li>Професійний тенісний стіл</li>
-              <li>Колекція настільних ігор</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-bold text-lg uppercase mb-4">ІНФРАСТРУКТУРА</h3>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Зручне паркування авто під шлагбаумом</li>
-              <li>2 поверхи комерційної нерухомості</li>
-              <li>Пiцерія, аптеки, супермаркети, кав'ярні, кафе, салони краси, ROZETKA та інша необхідна</li>
-            </ul>
+      <div className="w-full bg-white py-16 flex flex-col items-center">
+        <div className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 text-center text-black shadow-lg relative -mt-32 md:-mt-40 rounded-lg" style={{ backgroundColor: '#eeba2b' }}>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            <div>
+              <h3 className="font-bold text-lg uppercase mb-4">ВІДПОЧИНОК</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Лаунж зона з диваном та OLED TV</li>
+                <li>PlayStation 5</li>
+                <li>Професійний тенісний стіл</li>
+                <li>Колекція настільних ігор</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="font-bold text-lg uppercase mb-4">ІНФРАСТРУКТУРА</h3>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Зручне паркування авто під шлагбаумом</li>
+                <li>2 поверхи комерційної нерухомості</li>
+                <li>Пiцерія, аптеки, супермаркети, кав'ярні, кафе, салони краси, ROZETKA та інша необхідна</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

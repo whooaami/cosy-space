@@ -45,8 +45,8 @@ function Hero() {
       <div className="w-full bg-white py-16 flex flex-col items-center">
         {/* Yellow card */}
         <div
-          className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 text-center text-white shadow-lg relative -mt-32 md:-mt-40"
-          style={{ backgroundColor: '#dfaa04' }}
+          className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 text-center text-white shadow-lg relative -mt-32 md:-mt-40 rounded-lg"
+          style={{ backgroundColor: '#eeba2b' }}
         >
           {/* Book Now button */}
           <div className="absolute top-4 right-4 w-24 md:w-32 lg:w-36">
