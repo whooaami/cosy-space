@@ -1,37 +1,10 @@
 import React from 'react';
-import eventsImage from '../assets/team-events.jpg';
 import workspacesImage from '../assets/workspaces.jpg';
 import securityImage from '../assets/security-system.avif';
 
 function Additional() {
   return (
-    <div className="w-full">
-      {/* Events and Activities Section */}
-      <div className="w-full bg-white py-10 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="border-2 border-black rounded-[40px] overflow-hidden flex flex-col md:flex-row">
-            {/* Left side - Text */}
-            <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-center text-left">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Події та заходи
-              </h2>
-              <p className="text-base md:text-lg">
-                Спілкуйтеся з іншими членами та створюйте спільноту на наших подіях і заходах. Наш коворкінг – чудове місце для знайомства з новими людьми та вивчення нового.
-              </p>
-            </div>
-            
-            {/* Right side - Image */}
-            <div className="w-full md:w-1/2">
-              <img 
-                src={eventsImage} 
-                alt="Team events" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      
+    <div className="w-full">  
       {/* Spacer */}
       <div className="w-full h-16 md:h-24 bg-white"></div>
       
@@ -99,6 +72,15 @@ function Additional() {
               />
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* White section with "Why choose us" heading */}
+      <div className="w-full bg-white py-8 flex justify-center">
+        <div className="inline-block border-2 border-black p-4 md:p-6 bg-white relative -mt-12 md:-mt-16">
+          <h2 className="text-xl md:text-2xl font-bold text-black">
+            Переваги Cosy Space?
+          </h2>
         </div>
       </div>
     </div>

@@ -197,13 +197,13 @@ function ContactUs() {
       <section className="mb-12 flex justify-center">
         <div className="relative rounded-lg overflow-hidden shadow-lg w-[65%]">
             {/* Location card overlay */}
-            <div className="absolute top-4 left-4 z-10 bg-white rounded-lg shadow-md p-4 max-w-xs">
-            <h3 className="font-bold text-gray-800 text-lg mb-1">вулиця Стрийська, 113</h3>
-            <p className="text-gray-600 text-sm mb-2">вулиця Стрийська, 113, Львів, Львівська область, 79000</p>
-            <a href="https://www.google.com/maps/place/Житловий+комплекс+%22Ґорґани%22/@49.7860565,24.0137681,17z/data=!4m15!1m8!3m7!1s0x473ae7d2554f5607:0x198ccb11043569a0!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTEzLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!3b1!8m2!3d49.7860565!4d24.016343!16s%2Fg%2F11p0_fsf06!3m5!1s0x473ae7deeae5f4d7:0x3f0237af0b935d47!8m2!3d49.7865749!4d24.0226397!16s%2Fg%2F11gn1vlj8s?entry=ttu" target="_blank" rel="noopener noreferrer" className="text-blue-500 text-sm hover:text-blue-700">
-                Переглянути збільшену карту
-            </a>
-            </div>
+            {/* <div className="absolute top-4 left-4 z-10 bg-white rounded-lg shadow-md p-4 max-w-xs">
+              <h3 className="font-bold text-gray-800 text-lg mb-1">вулиця Стрийська, 113</h3>
+              <p className="text-gray-600 text-sm mb-2">вулиця Стрийська, 113, Львів, Львівська область, 79000</p>
+              <a href="https://www.google.com/maps/place/Житловий+комплекс+%22Ґорґани%22/@49.7860565,24.0137681,17z/data=!4m15!1m8!3m7!1s0x473ae7d2554f5607:0x198ccb11043569a0!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTEzLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!3b1!8m2!3d49.7860565!4d24.016343!16s%2Fg%2F11p0_fsf06!3m5!1s0x473ae7deeae5f4d7:0x3f0237af0b935d47!8m2!3d49.7865749!4d24.0226397!16s%2Fg%2F11gn1vlj8s?entry=ttu" target="_blank" rel="noopener noreferrer" className="text-blue-500 text-sm hover:text-blue-700">
+                  Переглянути збільшену карту
+              </a>
+            </div> */}
 
             {/* Map iframe */}
             <div className="w-full h-96">
