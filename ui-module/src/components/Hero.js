@@ -57,13 +57,11 @@ function Hero() {
             />
           </div>
           
-          {/* Co-working heading */}
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-light mt-4 mb-2">CO-WORKING</h2>
           
           {/* Divider */}
           <div className="my-4 border-t border-white w-1/3 mx-auto"></div>
           
-          {/* Ukrainian text */}
           <p className="mt-2 text-xl md:text-2xl font-light">
             ЗАТИШНИЙ<br />
             ПРОСТІР ДЛЯ<br />
@@ -82,12 +80,10 @@ function Hero() {
           </div>
         </div>
         
-        {/* Ukrainian heading */}
         <div className="w-full max-w-4xl mx-auto mt-20 px-4 text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-8">
             Наш коворкінг
           </h2>
-          
           <p className="text-base md:text-lg text-black max-w-3xl mx-auto">
             Це ідеальне рішення для тих, хто цінує працю в комфортному
             та стимулюючому середовищі. Швидкий інтернет, зручні робочі
@@ -95,7 +91,6 @@ function Hero() {
             для фрілансерів, стартапів та бізнес-команд. Приєднуйтесь до нашої
             спільноти та розкривайте свій творчий потенціал разом з нами!
           </p>
-          
           <div className="w-full max-w-md mx-auto border-t border-gray-300 mt-12"></div>
         </div>
       </div>

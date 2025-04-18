@@ -1,116 +1,121 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import coffeeImage from '../assets/coffee-machine.jpeg';
 import workspaceImage from '../assets/work-place.jpg';
 import computerSetupImage from '../assets/pc-setup.jpg';
 
-function Information() {
+const images = [
+  { src: coffeeImage, alt: 'Kitchen area' },
+  { src: workspaceImage, alt: 'Workspace' },
+  { src: computerSetupImage, alt: 'Computer setup' },
+  { src: coffeeImage, alt: 'Kitchen area 2' },
+  { src: workspaceImage, alt: 'Workspace 2' },
+  { src: computerSetupImage, alt: 'Computer setup 2' },
+];
+
+const Information = () => {
   return (
     <div className="flex flex-col w-full bg-white font-sans">
-      {/* Amenities Section */}
-      <div className="py-8 px-4 md:px-16 lg:px-24 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-left">
-          <div>
-            <h3 className="font-bold text-lg uppercase mb-6 text-center md:text-left">КУХНЯ</h3>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Кава</li>
-              <li>Чай</li>
-              <li>Кухонна техніка</li>
+      {/* ЗРУЧНОСТІ */}
+      <section className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-12 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 text-left">
+        {[
+          {
+            title: 'КУХНЯ',
+            items: ['Кава', 'Чай', 'Кухонна техніка'],
+          },
+          {
+            title: 'ПАРКОМІСЦЯ',
+            items: ['Велика кількість місць для авто під шлагбаумом з системою управління через додаток'],
+          },
+          {
+            title: 'ІНШЕ',
+            items: ['Прибирання та догляд робочих місць', 'Можливість налаштування освітлення під свої потреби'],
+          },
+        ].map((section, index) => (
+          <div key={index}>
+            <h3 className="text-lg font-bold uppercase mb-4 text-left">{section.title}</h3>
+            <ul className="list-disc pl-5 space-y-2 text-gray-800 text-sm md:text-base">
+              {section.items.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
             </ul>
           </div>
-          
-          <div>
-            <h3 className="font-bold text-lg uppercase mb-6 text-center md:text-left">ПАРКОМІСЦЯ</h3>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Велика кількість місць для авто під шлагбаумом з системою управління через додаток</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-bold text-lg uppercase mb-6 text-center md:text-left">ІНШЕ</h3>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Прибирання та догляд робочих місць</li>
-              <li>Можливість налаштування освітлення під свої потреби</li>
-            </ul>
-          </div>
-        </div>
-        
-        {/* Image Collage */}
-        <div className="relative mt-12 mb-8 h-[580px] w-full">
-          {/* Left top office photo */}
-          <div className="absolute top-5 left-28 z-10 w-80 h-52 shadow-md border-4 border-white">
-            <img src="/api/placeholder/320/208" alt="Office space" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Center plant photo */}
-          <div className="absolute top-12 left-1/3 z-20 w-96 h-52 shadow-md border-4 border-white">
-            <img src="/api/placeholder/384/208" alt="Plants and office area" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Right top person working */}
-          <div className="absolute top-0 right-16 z-10 w-64 h-48 shadow-md border-4 border-white">
-            <img src="/api/placeholder/256/192" alt="Person working at desk" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Small wooden cabinet left */}
-          <div className="absolute top-1/3 left-0 z-20 w-32 h-32 shadow-md border-4 border-white">
-            <img src="/api/placeholder/128/128" alt="Wooden cabinet" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Meeting room small */}
-          <div className="absolute top-48 left-32 z-30 w-64 h-44 shadow-md border-4 border-white">
-            <img src={workspaceImage} alt="Meeting room" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Art piece */}
-          <div className="absolute top-1/2 left-1/4 z-10 w-36 h-36 shadow-md border-4 border-white">
-            <img src="/api/placeholder/144/144" alt="Wall art" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Ping pong table */}
-          <div className="absolute bottom-0 left-16 z-30 w-80 h-44 shadow-md border-4 border-white">
-            <img src="/api/placeholder/320/176" alt="Ping pong table" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Kitchen area */}
-          <div className="absolute bottom-20 right-1/4 z-20 w-64 h-40 shadow-md border-4 border-white">
-            <img src={coffeeImage} alt="Kitchen area" className="w-full h-full object-cover" />
-          </div>
-          
-          {/* Person at workstation */}
-          <div className="absolute bottom-0 right-8 z-10 w-64 h-44 shadow-md border-4 border-white">
-            <img src={computerSetupImage} alt="Person at workstation" className="w-full h-full object-cover" />
-          </div>
-        </div>
+        ))}
       </div>
-      
-      {/* Facilities Section - using the exact color #eeba2b */}
-      <div className="w-full bg-white py-16 flex flex-col items-center">
-        <div className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 text-center text-black shadow-lg relative -mt-32 md:-mt-40 rounded-lg" style={{ backgroundColor: '#eeba2b' }}>
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-            <div>
-              <h3 className="font-bold text-lg uppercase mb-4">ВІДПОЧИНОК</h3>
-              <ul className="list-disc pl-5 space-y-2">
-                <li>Лаунж зона з диваном та OLED TV</li>
-                <li>PlayStation 5</li>
-                <li>Професійний тенісний стіл</li>
-                <li>Колекція настільних ігор</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="font-bold text-lg uppercase mb-4">ІНФРАСТРУКТУРА</h3>
-              <ul className="list-disc pl-5 space-y-2">
-                <li>Зручне паркування авто під шлагбаумом</li>
-                <li>2 поверхи комерційної нерухомості</li>
-                <li>Пiцерія, аптеки, супермаркети, кав'ярні, кафе, салони краси, ROZETKA та інша необхідна</li>
-              </ul>
-            </div>
+
+
+        {/* SWIPER */}
+        <div className="mt-12">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            loop
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            className="rounded-xl shadow-xl"
+          >
+            {images.map((img, idx) => (
+              <SwiperSlide key={idx}>
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
+
+      {/* ІНФРАСТРУКТУРА І ВІДПОЧИНОК */}
+      <section className="bg-white pb-16 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+        <div className="max-w-2xl mx-auto py-8 bg-yellow-400 text-black rounded-xl shadow-2xl px-4 sm:px-6 md:px-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+            {[
+              {
+                title: 'ВІДПОЧИНОК',
+                items: [
+                  'Лаунж зона з диваном та OLED TV',
+                  'PlayStation 5',
+                  'Професійний тенісний стіл',
+                  'Колекція настільних ігор',
+                ],
+              },
+              {
+                title: 'ІНФРАСТРУКТУРА',
+                items: [
+                  'Зручне паркування авто під шлагбаумом',
+                  '2 поверхи комерційної нерухомості',
+                  'Піцерія, аптеки, супермаркети, кав’ярні, кафе, салони краси, ROZETKA тощо',
+                ],
+              },
+            ].map((section, index) => (
+              <div key={index}>
+                <h3 className="text-lg font-bold uppercase mb-4">{section.title}</h3>
+                <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
+                  {section.items.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
-}
+};
 
 export default Information;

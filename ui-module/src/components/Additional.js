@@ -4,83 +4,58 @@ import securityImage from '../assets/security-system.avif';
 
 function Additional() {
   return (
-    <div className="w-full">  
-      {/* Spacer */}
-      <div className="w-full h-16 md:h-24 bg-white"></div>
-      
-      {/* Workspaces Section - Black background */}
-      <div id='advantages' className="w-full bg-black py-16 px-4" style={{ backgroundColor: '#1D1D1D' }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="border-2 border-white rounded-[40px] overflow-hidden flex flex-col md:flex-row">
-            {/* Left side - Text */}
-            <div className="w-full md:w-1/2 p-6 md:p-10 text-white text-left">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                РОБОЧІ МІСЦЯ
-              </h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Індивідуальні місця в Open Space</li>
-                <li>Кімната для переговорів на 2 особи / Skype Room</li>
-                <li>Надійний оптоволоконний інтернет Astra</li>
-                <li>Комфортні столи 130x70 та зручні крісла Barsky</li>
-                <li>Безперебійне живлення всіх робочих місць</li>
-                <li>Можливість оренди ПК</li>
-              </ul>
-            </div>
-            
-            {/* Right side - Image */}
-            <div className="w-full md:w-1/2">
-              <img 
-                src={workspacesImage} 
-                alt="Working spaces" 
-                className="w-full h-full object-cover"
-              />
-            </div>
+    <div className="w-full min-h-screen bg-[#1D1D1D] py-10">
+      <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
+        {/* Workspaces Section */}
+        <div className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
+          {/* Text */}
+          <div className="w-full lg:w-1/2 text-white text-left">
+            <h2 className="text-2xl font-bold mb-4">РОБОЧІ МІСЦЯ</h2>
+            <ul className="space-y-2 text-base">
+              <li>• Індивідуальні місця в Open Space</li>
+              <li>• Кімната для переговорів на 2 особи / Skype Room</li>
+              <li>• Надійний оптоволоконний інтернет Astra</li>
+              <li>• Комфортні столи 130x70 та зручні крісла Barsky</li>
+              <li>• Безперебійне живлення всіх робочих місць</li>
+              <li>• Можливість оренди ПК</li>
+            </ul>
           </div>
-        </div>
-      </div>
-      
-      {/* Spacer */}
-      <div className="w-full h-16 md:h-24 bg-black" style={{ backgroundColor: '#1D1D1D' }}></div>
-      
-      {/* Security Section - Black background */}
-      <div className="w-full bg-black py-16 px-4 pb-32" style={{ backgroundColor: '#1D1D1D' }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="border-2 border-white rounded-[40px] overflow-hidden flex flex-col md:flex-row-reverse">
-            {/* Right side - Text */}
-            <div className="w-full md:w-1/2 p-6 md:p-10 text-white text-left">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                БЕЗПЕКА
-              </h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Охорона 24/7 – SHERIFF</li>
-                <li>Відеоспостереження</li>
-                <li>Біометричний замок</li>
-                <li>Ajax Fireprotect</li>
-                <li>Дизельний генератор на випадок блекауту</li>
-                <li>Стабілізатор напруги</li>
-                <li>Рекуперація повітря</li>
-                <li>Кондиціонування</li>
-              </ul>
-            </div>
-            
-            {/* Left side - Image */}
-            <div className="w-full md:w-1/2">
-              <img 
-                src={securityImage} 
-                alt="Security systems" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* White section with "Why choose us" heading */}
-      <div className="w-full bg-white py-8 flex justify-center">
-        <div className="inline-block border-2 border-black p-4 md:p-6 bg-white relative -mt-12 md:-mt-16">
-          <h2 className="text-xl md:text-2xl font-bold text-black">
-            Переваги Cosy Space?
-          </h2>
+          {/* Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src={workspacesImage}
+              alt="Робочі місця"
+              className="w-full rounded-2xl border border-white object-cover max-h-[400px]"
+            />
+          </div>
+        </div>
+
+        {/* Security Section */}
+        <div className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-10">
+          {/* Text */}
+          <div className="w-full lg:w-1/2 text-white text-left">
+            <h2 className="text-2xl font-bold mb-4">БЕЗПЕКА</h2>
+            <ul className="space-y-2 text-base">
+              <li>• Охорона 24/7 – SHERIFF</li>
+              <li>• Відеоспостереження</li>
+              <li>• Біометричний замок</li>
+              <li>• Ajax Fireprotect</li>
+              <li>• Дизельний генератор на випадок блекауту</li>
+              <li>• Стабілізатор напруги</li>
+              <li>• Рекуперація повітря</li>
+              <li>• Кондиціонування</li>
+            </ul>
+          </div>
+
+          {/* Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              src={securityImage}
+              alt="Системи безпеки"
+              className="w-full rounded-2xl border border-white object-cover max-h-[400px]"
+            />
+          </div>
         </div>
       </div>
     </div>

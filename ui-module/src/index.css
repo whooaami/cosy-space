@@ -19,3 +19,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #eeba2b !important;
+}
+
+.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #eeba2b !important;
+}
