@@ -1,25 +1,44 @@
+import React from 'react';
 import { useState } from 'react';
+import Swal from 'sweetalert2'
 
 function ContactUs() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: ''
-  });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
+  const apiKey = process.env.REACT_APP_WEB3FORMS_API_KEY;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add your form submission logic here
+  const [result, setResult] = useState("");
+  
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    
+    formData.append("access_key", apiKey);
+    
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+    
+    const data = await response.json();
+    
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      Swal.fire({
+        title: "Success!",
+        text: "Form Submitted Successfully!",
+        icon: "success"
+      });
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
+    }
   };
 
   return (
@@ -81,8 +100,8 @@ function ContactUs() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-indigo-500 font-medium">ADDRESS</h4>
-                      <p className="text-gray-600">Львів, Стрийська 113В</p>
+                      <h4 className="text-indigo-500 font-medium text-left">ADDRESS</h4>
+                      <p className="text-gray-600">Львів, Стрийська 113Г</p>
                     </div>
                   </div>
                   
@@ -93,7 +112,7 @@ function ContactUs() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-indigo-500 font-medium">EMAIL</h4>
+                      <h4 className="text-indigo-500 font-medium text-left">EMAIL</h4>
                       <p className="text-gray-600">info@website.com</p>
                     </div>
                   </div>
@@ -105,7 +124,7 @@ function ContactUs() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-indigo-500 font-medium">PHONE</h4>
+                      <h4 className="text-indigo-500 font-medium text-left">PHONE</h4>
                       <p className="text-gray-600">+380</p>
                     </div>
                   </div>
@@ -117,7 +136,7 @@ function ContactUs() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-indigo-500 font-medium">PHONE</h4>
+                      <h4 className="text-indigo-500 font-medium text-left">PHONE</h4>
                       <p className="text-gray-600">+380 67 58 14 980</p>
                     </div>
                   </div>
@@ -132,15 +151,13 @@ function ContactUs() {
                 
                 <form onSubmit={handleSubmit}>
                   <div className="mb-6">
-                    <label className="block text-gray-600 mb-2">Name *</label>
+                    <label className="block text-gray-600 mb-2 text-left">Name *</label>
                     <div className="flex gap-4">
                       <div className="w-1/2">
                         <input
                           type="text"
                           name="firstName"
                           placeholder="First"
-                          value={formData.firstName}
-                          onChange={handleChange}
                           className="w-full p-3 border border-gray-300 rounded"
                           required
                         />
@@ -150,43 +167,44 @@ function ContactUs() {
                           type="text"
                           name="lastName"
                           placeholder="Last"
-                          value={formData.lastName}
-                          onChange={handleChange}
                           className="w-full p-3 border border-gray-300 rounded"
                           required
                         />
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="mb-6">
-                    <label className="block text-gray-600 mb-2">Email *</label>
+                    <label className="block text-gray-600 mb-2 text-left">Email *</label>
                     <input
                       type="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       className="w-full p-3 border border-gray-300 rounded"
                       required
                     />
                   </div>
-                  
+
                   <div className="mb-6">
-                    <label className="block text-gray-600 mb-2">Comment or Message</label>
+                    <label className="block text-gray-600 mb-2 text-left">Message *</label>
                     <textarea
                       name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="w-full p-3 border border-gray-300 rounded h-32"
-                    ></textarea>
+                      rows="5"
+                      className="w-full p-3 border border-gray-300 rounded"
+                      required
+                    />
                   </div>
-                  
+
                   <button
                     type="submit"
-                    className="w-full bg-white text-gray-800 font-bold py-3 border border-gray-300 rounded"
+                    className="bg-indigo-500 text-white font-semibold py-3 px-6 rounded hover:bg-indigo-600 transition"
                   >
-                    SUBMIT
+                    Submit
                   </button>
+                  {result && (
+                    <p className="mt-4 text-sm text-gray-700">
+                      {result}
+                    </p>
+                  )}
                 </form>
               </div>
             </div>
@@ -196,14 +214,6 @@ function ContactUs() {
 
       <section className="mb-12 flex justify-center">
         <div className="relative rounded-lg overflow-hidden shadow-lg w-[65%]">
-            {/* Location card overlay */}
-            {/* <div className="absolute top-4 left-4 z-10 bg-white rounded-lg shadow-md p-4 max-w-xs">
-              <h3 className="font-bold text-gray-800 text-lg mb-1">вулиця Стрийська, 113</h3>
-              <p className="text-gray-600 text-sm mb-2">вулиця Стрийська, 113, Львів, Львівська область, 79000</p>
-              <a href="https://www.google.com/maps/place/Житловий+комплекс+%22Ґорґани%22/@49.7860565,24.0137681,17z/data=!4m15!1m8!3m7!1s0x473ae7d2554f5607:0x198ccb11043569a0!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTEzLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!3b1!8m2!3d49.7860565!4d24.016343!16s%2Fg%2F11p0_fsf06!3m5!1s0x473ae7deeae5f4d7:0x3f0237af0b935d47!8m2!3d49.7865749!4d24.0226397!16s%2Fg%2F11gn1vlj8s?entry=ttu" target="_blank" rel="noopener noreferrer" className="text-blue-500 text-sm hover:text-blue-700">
-                  Переглянути збільшену карту
-              </a>
-            </div> */}
 
             {/* Map iframe */}
             <div className="w-full h-96">
