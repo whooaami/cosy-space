@@ -50,7 +50,7 @@ function Reviews() {
   };
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16 min-h-screen">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
@@ -59,7 +59,7 @@ function Reviews() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-sm">
               <p className="text-gray-700 mb-4">{testimonial.text}</p>

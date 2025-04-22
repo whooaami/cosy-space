@@ -45,15 +45,15 @@ function ContactUs() {
     <div id="contactUs" className="min-h-screen">
 
       {/* Dark header section */}
-      <section className="bg-gray-900 text-white min-h-[40vh] pt-16 pb-0 text-center" style={{ backgroundColor: '#1D1D1D' }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-lg mx-auto">
-            <div className="border-t border-gray-600 pt-4 mb-4"></div>
-            <h2 className="text-3xl font-semibold mb-2">Є питання?</h2>
-            <h1 className="text-4xl font-bold mb-4">Зв'яжіться з нами!</h1>
-            <div className="border-b border-gray-600 pb-4 mb-8"></div>
+      <section className="bg-gray-900 text-white min-h-[45vh] pt-20 pb-8 text-center" style={{ backgroundColor: '#1D1D1D' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto">
+            <div className="border-t border-white pt-4 mb-4"></div>
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Є питання?</h2>
+            <h1 className="text-3xl sm:text-4xl font-bold mb-4">Зв'яжіться з нами!</h1>
+            <div className="border-b border-white pb-4 mb-8"></div>
 
-            <button className="bg-white text-black font-bold py-3 px-8 rounded-md text-lg">
+            <button className="bg-white text-black font-bold py-3 px-6 sm:px-8 rounded-md text-base sm:text-lg">
               CONTACT US
             </button>
           </div>
@@ -62,19 +62,20 @@ function ContactUs() {
 
       {/* Gold banner section */}
       <section className="relative z-10">
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center px-4 sm:px-6 lg:px-8">
           <div
-            className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 text-center text-white shadow-lg -mt-10 rounded-lg"
+            className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:max-w-[750px] p-6 sm:p-8 text-center text-white shadow-lg -mt-12 sm:-mt-16 rounded-lg"
             style={{ backgroundColor: '#eeba2b' }}
           >
-            <p className="text-white text-xl mb-4">ОТРИМАЙТЕ СВОЮ КОВОРКІНГ-ЗОНУ</p>
-            <h2 className="text-gray-900 text-4xl font-bold">
+            <p className="text-white text-lg sm:text-xl mb-4">ОТРИМАЙТЕ СВОЮ КОВОРКІНГ-ЗОНУ</p>
+            <h2 className="text-gray-900 text-2xl sm:text-4xl font-bold leading-tight">
               СТВОРИ ЩОСЬ<br />
               ЗАХОПЛЮЮЧЕ З НАМИ!
             </h2>
           </div>
         </div>
       </section>
+
 
 
       {/* Contact form section */}
@@ -151,13 +152,13 @@ function ContactUs() {
                 
                 <form onSubmit={handleSubmit}>
                   <div className="mb-6">
-                    <label className="block text-gray-600 mb-2 text-left">Name *</label>
+                    <label className="block text-gray-600 mb-2 text-left">Full Name *</label>
                     <div className="flex gap-4">
                       <div className="w-1/2">
                         <input
                           type="text"
                           name="firstName"
-                          placeholder="First"
+                          placeholder="Name"
                           className="w-full p-3 border border-gray-300 rounded"
                           required
                         />
@@ -165,10 +166,9 @@ function ContactUs() {
                       <div className="w-1/2">
                         <input
                           type="text"
-                          name="lastName"
-                          placeholder="Last"
+                          name="Surname"
+                          placeholder="Lastname"
                           className="w-full p-3 border border-gray-300 rounded"
-                          required
                         />
                       </div>
                     </div>
@@ -179,6 +179,7 @@ function ContactUs() {
                     <input
                       type="email"
                       name="email"
+                      placeholder='example@gmail.com'
                       className="w-full p-3 border border-gray-300 rounded"
                       required
                     />
@@ -188,6 +189,7 @@ function ContactUs() {
                     <label className="block text-gray-600 mb-2 text-left">Message *</label>
                     <textarea
                       name="message"
+                      placeholder='Typing...'
                       rows="5"
                       className="w-full p-3 border border-gray-300 rounded"
                       required
