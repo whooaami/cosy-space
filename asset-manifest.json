@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/cosy-space/static/css/main.c5372bb5.css",
-    "main.js": "/cosy-space/static/js/main.7890f6c0.js",
+    "main.css": "/cosy-space/static/css/main.eef92a5c.css",
+    "main.js": "/cosy-space/static/js/main.a171226e.js",
     "static/js/453.37ceee0d.chunk.js": "/cosy-space/static/js/453.37ceee0d.chunk.js",
-    "static/media/space.jpg": "/cosy-space/static/media/space.efefe2e97b572aed93d1.jpg",
     "static/media/work-place.jpg": "/cosy-space/static/media/work-place.e51bc7f1fdf35e09bcbe.jpg",
     "static/media/team-events.jpg": "/cosy-space/static/media/team-events.8e4d645fe18d9127bac6.jpg",
     "static/media/workspaces.jpg": "/cosy-space/static/media/workspaces.8865b97c4ba593466a45.jpg",
     "static/media/pc-setup.jpg": "/cosy-space/static/media/pc-setup.81314adb9ddf906f03a7.jpg",
+    "static/media/space.webp": "/cosy-space/static/media/space.837fce564a2f52358682.webp",
     "static/media/coffee-machine.jpeg": "/cosy-space/static/media/coffee-machine.f774879520b0aaa774a1.jpeg",
     "static/media/white-logo-1.png": "/cosy-space/static/media/white-logo-1.1daf746ec4fc8ac47796.png",
     "static/media/black-logo-1.png": "/cosy-space/static/media/black-logo-1.55297e18defb15975f7d.png",
     "static/media/security-system.avif": "/cosy-space/static/media/security-system.9064bdc968bde4643e8a.avif",
     "static/media/book-now.png": "/cosy-space/static/media/book-now.247ca209044101c533af.png",
     "index.html": "/cosy-space/index.html",
-    "main.c5372bb5.css.map": "/cosy-space/static/css/main.c5372bb5.css.map",
-    "main.7890f6c0.js.map": "/cosy-space/static/js/main.7890f6c0.js.map",
+    "main.eef92a5c.css.map": "/cosy-space/static/css/main.eef92a5c.css.map",
+    "main.a171226e.js.map": "/cosy-space/static/js/main.a171226e.js.map",
     "453.37ceee0d.chunk.js.map": "/cosy-space/static/js/453.37ceee0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5372bb5.css",
-    "static/js/main.7890f6c0.js"
+    "static/css/main.eef92a5c.css",
+    "static/js/main.a171226e.js"
   ]
 }
