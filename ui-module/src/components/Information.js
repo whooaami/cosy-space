@@ -51,7 +51,7 @@ const Information = () => {
 
 
         {/* SWIPER */}
-        <div className="mt-12">
+        <div id='gallery' className="mt-12">
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={20}

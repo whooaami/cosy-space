@@ -126,7 +126,7 @@ function ContactUs() {
                     </div>
                     <div>
                       <h4 className="text-indigo-500 font-medium text-left">PHONE</h4>
-                      <p className="text-gray-600">+380</p>
+                      <p className="text-gray-600">+380 (96) 590 02 84</p>
                     </div>
                   </div>
                   
@@ -138,7 +138,7 @@ function ContactUs() {
                     </div>
                     <div>
                       <h4 className="text-indigo-500 font-medium text-left">PHONE</h4>
-                      <p className="text-gray-600">+380 67 58 14 980</p>
+                      <p className="text-gray-600">+380 (67) 581 43 80</p>
                     </div>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ function ContactUs() {
             {/* Map iframe */}
             <div className="w-full h-96">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.189238133744!2d24.02006157694421!3d49.786574771485514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7deeae5f4d7%3A0x3f0237af0b935d47!2z0JbQuNGC0LvQvtCy0LjQuSDQutC-0LzQv9C70LXQutGBICLQhtC-0YDQs9Cw0L3QuCI!5e0!3m2!1sen!2sua!4v1713192868748!5m2!1sen!2sua" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20604.516580312607!2d24.0207569!3d49.794252799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7104eb5f353%3A0xf958f5a38225d2f2!2sCoworking%20-%20Cosy%20Space!5e0!3m2!1suk!2sua!4v1745563562362!5m2!1suk!2sua" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
