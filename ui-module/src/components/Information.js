@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import coffeeImage from '../assets/coffee-machine.jpeg';
 import workspaceImage from '../assets/work-place.jpg';
@@ -19,39 +21,45 @@ const images = [
 ];
 
 const Information = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="flex flex-col w-full bg-white font-sans">
       {/* ЗРУЧНОСТІ */}
       <section className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-12 max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 text-left">
-        {[
-          {
-            title: 'КУХНЯ',
-            items: ['Кава', 'Чай', 'Кухонна техніка'],
-          },
-          {
-            title: 'ПАРКОМІСЦЯ',
-            items: ['Велика кількість місць для авто під шлагбаумом з системою управління через додаток'],
-          },
-          {
-            title: 'ІНШЕ',
-            items: ['Прибирання та догляд робочих місць', 'Можливість налаштування освітлення під свої потреби'],
-          },
-        ].map((section, index) => (
-          <div key={index}>
-            <h3 className="text-lg font-bold uppercase mb-4 text-left">{section.title}</h3>
-            <ul className="list-disc pl-5 space-y-2 text-gray-800 text-sm md:text-base">
-              {section.items.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 text-left">
+          {[
+            {
+              title: 'КУХНЯ',
+              items: ['Кава', 'Чай', 'Кухонна техніка'],
+            },
+            {
+              title: 'ПАРКОМІСЦЯ',
+              items: ['Велика кількість місць для авто під шлагбаумом з системою управління через додаток'],
+            },
+            {
+              title: 'ІНШЕ',
+              items: ['Прибирання та догляд робочих місць', 'Можливість налаштування освітлення під свої потреби'],
+            },
+          ].map((section, index) => (
+            <div key={index} data-aos="fade-up">
+              <h3 className="text-lg font-bold uppercase mb-4 text-left">{section.title}</h3>
+              <ul className="list-disc pl-5 space-y-2 text-gray-800 text-sm md:text-base">
+                {section.items.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
 
         {/* SWIPER */}
-        <div id='gallery' className="mt-12">
+        <div id="gallery" className="mt-12">
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={20}
@@ -72,6 +80,7 @@ const Information = () => {
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+                  data-aos="zoom-in"
                 />
               </SwiperSlide>
             ))}
@@ -102,7 +111,7 @@ const Information = () => {
                 ],
               },
             ].map((section, index) => (
-              <div key={index}>
+              <div key={index} data-aos="fade-up">
                 <h3 className="text-lg font-bold uppercase mb-4">{section.title}</h3>
                 <ul className="list-disc pl-5 space-y-2 text-sm md:text-base">
                   {section.items.map((item, idx) => (

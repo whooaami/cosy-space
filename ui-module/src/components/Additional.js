@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import workspacesImage from '../assets/workspaces.jpg';
 import securityImage from '../assets/security-system.avif';
 
 function Additional() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="w-full min-h-screen bg-[#1D1D1D] py-10">
       <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
+        
         {/* Workspaces Section */}
-        <div className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
+        <div 
+          className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-10" 
+          data-aos="fade-up" 
+        >
           {/* Text */}
-          <div className="w-full lg:w-1/2 text-white text-left">
+          <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right">
             <h2 className="text-2xl font-bold mb-4">РОБОЧІ МІСЦЯ</h2>
             <ul className="space-y-2 text-base">
               <li>• Індивідуальні місця в Open Space</li>
@@ -22,7 +36,7 @@ function Additional() {
           </div>
 
           {/* Image */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2" data-aos="fade-left">
             <img
               src={workspacesImage}
               alt="Робочі місця"
@@ -32,9 +46,12 @@ function Additional() {
         </div>
 
         {/* Security Section */}
-        <div className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-10">
+        <div 
+          className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-10" 
+          data-aos="fade-up"
+        >
           {/* Text */}
-          <div className="w-full lg:w-1/2 text-white text-left">
+          <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right">
             <h2 className="text-2xl font-bold mb-4">БЕЗПЕКА</h2>
             <ul className="space-y-2 text-base">
               <li>• Охорона 24/7 – SHERIFF</li>
@@ -49,7 +66,7 @@ function Additional() {
           </div>
 
           {/* Image */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2" data-aos="fade-left">
             <img
               src={securityImage}
               alt="Системи безпеки"

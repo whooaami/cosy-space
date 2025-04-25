@@ -1,12 +1,21 @@
 import React from 'react';
-import { useState } from 'react';
-import Swal from 'sweetalert2'
+import { useState, useEffect } from 'react';
+import Swal from 'sweetalert2';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function ContactUs() {
 
   const apiKey = process.env.REACT_APP_WEB3FORMS_API_KEY;
 
   const [result, setResult] = useState("");
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
   
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -45,7 +54,7 @@ function ContactUs() {
     <div id="contactUs" className="min-h-screen">
 
       {/* Dark header section */}
-      <section className="bg-gray-900 text-white min-h-[45vh] pt-20 pb-8 text-center" style={{ backgroundColor: '#1D1D1D' }}>
+      <section className="bg-gray-900 text-white min-h-[45vh] pt-20 pb-8 text-center" style={{ backgroundColor: '#1D1D1D' }} data-aos="fade-down">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <div className="border-t border-white pt-4 mb-4"></div>
@@ -61,7 +70,7 @@ function ContactUs() {
       </section>
 
       {/* Gold banner section */}
-      <section className="relative z-10">
+      <section className="relative z-10" data-aos="zoom-in">
         <div className="w-full flex flex-col items-center px-4 sm:px-6 lg:px-8">
           <div
             className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:max-w-[750px] p-6 sm:p-8 text-center text-white shadow-lg -mt-12 sm:-mt-16 rounded-lg"
@@ -79,12 +88,12 @@ function ContactUs() {
 
 
       {/* Contact form section */}
-      <section className="py-12 px-4">
+      <section className="py-12 px-4" data-aos="fade-up">
         <div className="max-w-5xl mx-auto">
           <div className="bg-indigo-100 rounded-lg overflow-hidden">
             <div className="md:flex">
               {/* Left side - Contact info */}
-              <div className="md:w-2/5 p-8">
+              <div className="md:w-2/5 p-8" data-aos="fade-right">
                 <h2 className="text-2xl font-bold mb-1">Зв'яжіться з Нами</h2>
                 <h3 className="text-2xl font-bold mb-4">Сьогодні</h3>
                 
@@ -145,7 +154,7 @@ function ContactUs() {
               </div>
               
               {/* Right side - Form */}
-              <div className="md:w-3/5 p-8">
+              <div className="md:w-3/5 p-8" data-aos="fade-left">
                 <p className="text-gray-600 mb-4">
                   Please enable JavaScript in your browser to complete this form.
                 </p>
@@ -214,7 +223,7 @@ function ContactUs() {
         </div>
       </section>
 
-      <section className="mb-12 flex justify-center">
+      <section className="mb-12 flex justify-center" data-aos="zoom-in-up">
         <div className="relative rounded-lg overflow-hidden shadow-lg w-[65%]">
 
             {/* Map iframe */}

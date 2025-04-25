@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Reviews() {
   const testimonials = [
@@ -36,7 +38,16 @@ function Reviews() {
     }
   ];
 
-  // Function to render rating stars
+  // Ініціалізація AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }, []);
+
+  // Функція для рендеру зірочок
   const renderStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
@@ -52,16 +63,25 @@ function Reviews() {
   return (
     <section className="bg-gray-50 py-16 min-h-screen">
       <div className="container mx-auto px-4">
-        {/* Header */}
+        {/* Заголовок секції */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl text-[#eeba2b] font-medium mb-2 uppercase tracking-wider">ВІДГУКИ</h1>
-          <h1 className="text-4xl font-bold text-gray-900">Що про нас говорять</h1>
+          <h1 className="text-4xl text-[#eeba2b] font-medium mb-2 uppercase tracking-wider" data-aos="fade-up">
+            ВІДГУКИ
+          </h1>
+          <h1 className="text-4xl font-bold text-gray-900" data-aos="fade-up" data-aos-delay="100">
+            Що про нас говорять
+          </h1>
         </div>
 
-        {/* Testimonials Grid */}
+        {/* Сітка відгуків */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-sm">
+            <div
+              key={testimonial.id}
+              className="bg-white p-6 rounded-lg shadow-sm"
+              data-aos="fade-up"
+              data-aos-delay={testimonial.id * 100} // Додаємо затримку для кожного відгуку
+            >
               <p className="text-gray-700 mb-4">{testimonial.text}</p>
               <div className="flex items-center">
                 <img 
