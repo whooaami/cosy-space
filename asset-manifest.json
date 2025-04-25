@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cosy-space/static/css/main.eef92a5c.css",
-    "main.js": "/cosy-space/static/js/main.a171226e.js",
+    "main.js": "/cosy-space/static/js/main.bdcdf06e.js",
     "static/js/453.37ceee0d.chunk.js": "/cosy-space/static/js/453.37ceee0d.chunk.js",
     "static/media/work-place.jpg": "/cosy-space/static/media/work-place.e51bc7f1fdf35e09bcbe.jpg",
     "static/media/team-events.jpg": "/cosy-space/static/media/team-events.8e4d645fe18d9127bac6.jpg",
@@ -15,11 +15,11 @@
     "static/media/book-now.png": "/cosy-space/static/media/book-now.247ca209044101c533af.png",
     "index.html": "/cosy-space/index.html",
     "main.eef92a5c.css.map": "/cosy-space/static/css/main.eef92a5c.css.map",
-    "main.a171226e.js.map": "/cosy-space/static/js/main.a171226e.js.map",
+    "main.bdcdf06e.js.map": "/cosy-space/static/js/main.bdcdf06e.js.map",
     "453.37ceee0d.chunk.js.map": "/cosy-space/static/js/453.37ceee0d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eef92a5c.css",
-    "static/js/main.a171226e.js"
+    "static/js/main.bdcdf06e.js"
   ]
 }
