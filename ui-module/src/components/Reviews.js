@@ -38,16 +38,14 @@ function Reviews() {
     }
   ];
 
-  // Ініціалізація AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: 'ease-in-out',
       once: true
     });
   }, []);
 
-  // Функція для рендеру зірочок
   const renderStars = (rating) => {
     const stars = [];
     for (let i = 0; i < rating; i++) {
@@ -80,7 +78,7 @@ function Reviews() {
               key={testimonial.id}
               className="bg-white p-6 rounded-lg shadow-sm"
               data-aos="fade-up"
-              data-aos-delay={testimonial.id * 100} // Додаємо затримку для кожного відгуку
+              data-aos-delay={testimonial.id * 100}
             >
               <p className="text-gray-700 mb-4">{testimonial.text}</p>
               <div className="flex items-center">

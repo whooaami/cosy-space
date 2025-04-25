@@ -23,7 +23,7 @@ function Additional() {
           data-aos="fade-up" 
         >
           {/* Text */}
-          <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right">
+          <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right" data-aos-delay="200">
             <h2 className="text-2xl font-bold mb-4">РОБОЧІ МІСЦЯ</h2>
             <ul className="space-y-2 text-base">
               <li>• Індивідуальні місця в Open Space</li>
@@ -51,7 +51,7 @@ function Additional() {
           data-aos="fade-up"
         >
           {/* Text */}
-          <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right">
+          <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right" data-aos-delay="200">
             <h2 className="text-2xl font-bold mb-4">БЕЗПЕКА</h2>
             <ul className="space-y-2 text-base">
               <li>• Охорона 24/7 – SHERIFF</li>

@@ -4,11 +4,10 @@ import 'aos/dist/aos.css';
 
 function Price() {
   useEffect(() => {
-    // Ініціалізація AOS
     AOS.init({
-      duration: 1000, // час анімації
-      easing: 'ease-in-out', // ефект анімації
-      once: true, // анімація буде виконуватися лише один раз
+      duration: 1500,
+      easing: 'ease-in-out',
+      once: true,
     });
   }, []);
 

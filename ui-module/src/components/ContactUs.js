@@ -12,7 +12,7 @@ function ContactUs() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       once: true
     });
   }, []);
@@ -54,7 +54,7 @@ function ContactUs() {
     <div id="contactUs" className="min-h-screen">
 
       {/* Dark header section */}
-      <section className="bg-gray-900 text-white min-h-[45vh] pt-20 pb-8 text-center" style={{ backgroundColor: '#1D1D1D' }} data-aos="fade-down">
+      <section className="bg-gray-900 text-white min-h-[45vh] pt-20 pb-8 text-center" style={{ backgroundColor: '#1D1D1D' }} data-aos="fade-up" data-aos-delay="200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <div className="border-t border-white pt-4 mb-4"></div>
