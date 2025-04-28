@@ -87,7 +87,7 @@ function ContactForm() {
                     </div>
                     <div>
                       <h4 className="text-indigo-500 font-medium text-left">EMAIL</h4>
-                      <p className="text-gray-600">info@website.com</p>
+                      <p className="text-gray-600">cosyspace.lviv@gmail.com</p>
                     </div>
                   </div>
                   
