@@ -16,10 +16,10 @@ function Additional() {
   return (
     <div className="w-full min-h-screen bg-[#1D1D1D] py-10">
       <div className="max-w-7xl mx-auto space-y-12 px-4 sm:px-6 lg:px-8">
-        
-        <div 
-          className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-10" 
-          data-aos="fade-up" 
+
+        <div
+          className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row items-center gap-6 lg:gap-10"
+          data-aos="fade-up"
         >
           <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right" data-aos-delay="200">
             <h2 className="text-2xl font-bold mb-4">РОБОЧІ МІСЦЯ</h2>
@@ -41,8 +41,8 @@ function Additional() {
           </div>
         </div>
 
-        <div 
-          className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-10" 
+        <div
+          className="border border-white rounded-3xl p-6 sm:p-8 flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-10"
           data-aos="fade-up"
         >
           <div className="w-full lg:w-1/2 text-white text-left" data-aos="fade-right" data-aos-delay="200">

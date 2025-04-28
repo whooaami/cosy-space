@@ -82,9 +82,9 @@ function Reviews() {
             >
               <p className="text-gray-700 mb-4">{testimonial.text}</p>
               <div className="flex items-center">
-                <img 
-                  src={testimonial.avatar} 
-                  alt={testimonial.name} 
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>

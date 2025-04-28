@@ -23,9 +23,8 @@ function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 ${isScrolled ? "bg-white shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* <h1 className={`text-2xl font-bold ${isScrolled ? "text-black" : "text-white"}`}>

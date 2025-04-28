@@ -16,21 +16,21 @@ function ContactForm() {
       once: true
     });
   }, []);
-  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-    
+
     formData.append("access_key", apiKey);
-    
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData
     });
-    
+
     const data = await response.json();
-    
+
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
@@ -60,11 +60,11 @@ function ContactForm() {
               <div className="md:w-2/5 p-8" data-aos="fade-right">
                 <h2 className="text-2xl font-bold mb-1">Зв'яжіться з Нами</h2>
                 <h3 className="text-2xl font-bold mb-4">Сьогодні</h3>
-                
+
                 <p className="text-gray-700 mb-8">
                   Наш коворкінг доступний для різних бюджетів. Ми пропонуємо різні варіанти членства, щоб задовольнити ваші потреби.
                 </p>
-                
+
                 <div className="bg-white rounded-lg p-6">
                   <div className="mb-6 flex items-start">
                     <div className="bg-indigo-500 text-white p-2 rounded-lg mr-4">
@@ -78,7 +78,7 @@ function ContactForm() {
                       <p className="text-gray-600">Львів, Стрийська 113Г</p>
                     </div>
                   </div>
-                  
+
                   <div className="mb-6 flex items-start">
                     <div className="bg-indigo-500 text-white p-2 rounded-lg mr-4">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@ function ContactForm() {
                       <p className="text-gray-600">cosyspace.lviv@gmail.com</p>
                     </div>
                   </div>
-                  
+
                   <div className="mb-6 flex items-start">
                     <div className="bg-indigo-500 text-white p-2 rounded-lg mr-4">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +102,7 @@ function ContactForm() {
                       <p className="text-gray-600">+380 (96) 590 02 84</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="bg-indigo-500 text-white p-2 rounded-lg mr-4">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -116,13 +116,13 @@ function ContactForm() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Right side - Form */}
               <div className="md:w-3/5 p-8" data-aos="fade-left">
                 <p className="text-gray-600 mb-4">
                   Please enable JavaScript in your browser to complete this form.
                 </p>
-                
+
                 <form onSubmit={handleSubmit}>
                   <div className="mb-6">
                     <label className="block text-gray-600 mb-2 text-left">Full Name *</label>
@@ -190,36 +190,36 @@ function ContactForm() {
       <section className="mb-12 flex justify-center" data-aos="zoom-in-up">
         <div className="relative rounded-lg overflow-hidden shadow-lg w-[65%]">
 
-            {/* Map iframe */}
-            <div className="w-full h-96">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20604.516580312607!2d24.0207569!3d49.794252799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7104eb5f353%3A0xf958f5a38225d2f2!2sCoworking%20-%20Cosy%20Space!5e0!3m2!1suk!2sua!4v1745563562362!5m2!1suk!2sua" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Житловий комплекс Ґорґани Location"
-                className="w-full h-full"
+          {/* Map iframe */}
+          <div className="w-full h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20604.516580312607!2d24.0207569!3d49.794252799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7104eb5f353%3A0xf958f5a38225d2f2!2sCoworking%20-%20Cosy%20Space!5e0!3m2!1suk!2sua!4v1745563562362!5m2!1suk!2sua"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Житловий комплекс Ґорґани Location"
+              className="w-full h-full"
             ></iframe>
-            </div>
+          </div>
 
-            {/* Zoom controls */}
-            <div className="absolute bottom-4 right-4 z-10 flex flex-col">
+          {/* Zoom controls */}
+          <div className="absolute bottom-4 right-4 z-10 flex flex-col">
             {/* + and - buttons as before */}
-            </div>
+          </div>
 
-            {/* Google logo */}
-            <div className="absolute bottom-1 left-1 z-10">
+          {/* Google logo */}
+          <div className="absolute bottom-1 left-1 z-10">
             <img src="/api/placeholder/60/20" alt="Google Logo" className="h-5" />
-            </div>
+          </div>
 
-            <div className="absolute bottom-1 right-12 z-10 text-xs text-gray-600">
+          <div className="absolute bottom-1 right-12 z-10 text-xs text-gray-600">
             <span>Дані карт ©2025 Google</span>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     </div>
   );
