@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function ContactUs() {
+function ContactForm() {
 
   const apiKey = process.env.REACT_APP_WEB3FORMS_API_KEY;
 
@@ -51,43 +51,7 @@ function ContactUs() {
   };
 
   return (
-    <div id="contactUs" className="min-h-screen">
-
-      {/* Dark header section */}
-      <section className="bg-gray-900 text-white min-h-[45vh] pt-20 pb-8 text-center" style={{ backgroundColor: '#1D1D1D' }} data-aos="fade-up" data-aos-delay="200">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto">
-            <div className="border-t border-white pt-4 mb-4"></div>
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Є питання?</h2>
-            <h1 className="text-3xl sm:text-4xl font-bold mb-4">Зв'яжіться з нами!</h1>
-            <div className="border-b border-white pb-4 mb-8"></div>
-
-            <button className="bg-white text-black font-bold py-3 px-6 sm:px-8 rounded-md text-base sm:text-lg">
-              CONTACT US
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Gold banner section */}
-      <section className="relative z-10" data-aos="zoom-in">
-        <div className="w-full flex flex-col items-center px-4 sm:px-6 lg:px-8">
-          <div
-            className="w-full sm:w-11/12 md:w-3/4 lg:w-2/3 xl:max-w-[750px] p-6 sm:p-8 text-center text-white shadow-lg -mt-12 sm:-mt-16 rounded-lg"
-            style={{ backgroundColor: '#eeba2b' }}
-          >
-            <p className="text-white text-lg sm:text-xl mb-4">ОТРИМАЙТЕ СВОЮ КОВОРКІНГ-ЗОНУ</p>
-            <h2 className="text-gray-900 text-2xl sm:text-4xl font-bold leading-tight">
-              СТВОРИ ЩОСЬ<br />
-              ЗАХОПЛЮЮЧЕ З НАМИ!
-            </h2>
-          </div>
-        </div>
-      </section>
-
-
-
-      {/* Contact form section */}
+    <div className="min-h-screen">
       <section className="py-12 px-4" data-aos="fade-up">
         <div className="max-w-5xl mx-auto">
           <div className="bg-indigo-100 rounded-lg overflow-hidden">
@@ -261,4 +225,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default ContactForm;
