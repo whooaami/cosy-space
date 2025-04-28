@@ -1,32 +1,26 @@
 {
   "files": {
-    "main.css": "/cosy-space/static/css/main.a83d883a.css",
-    "main.js": "/cosy-space/static/js/main.c8bc0aa0.js",
+    "main.css": "/cosy-space/static/css/main.14bc7142.css",
+    "main.js": "/cosy-space/static/js/main.4040d979.js",
     "static/js/453.37ceee0d.chunk.js": "/cosy-space/static/js/453.37ceee0d.chunk.js",
     "static/media/work-place.jpg": "/cosy-space/static/media/work-place.e51bc7f1fdf35e09bcbe.jpg",
-    "static/media/team-events.jpg": "/cosy-space/static/media/team-events.8e4d645fe18d9127bac6.jpg",
     "static/media/workspaces.jpg": "/cosy-space/static/media/workspaces.8865b97c4ba593466a45.jpg",
-    "static/media/pc-setup.jpg": "/cosy-space/static/media/pc-setup.81314adb9ddf906f03a7.jpg",
-    "static/media/man-near-pc1.webp": "/cosy-space/static/media/man-near-pc1.aac55dd0a00827668b06.webp",
-    "static/media/ping-pong.webp": "/cosy-space/static/media/ping-pong.9c6d514fff97d82f9b4a.webp",
     "static/media/space.webp": "/cosy-space/static/media/space.837fce564a2f52358682.webp",
-    "static/media/kitchen.webp": "/cosy-space/static/media/kitchen.a3468c679f4d72cfa45b.webp",
-    "static/media/hall.webp": "/cosy-space/static/media/hall.024ff515b12a36922daa.webp",
-    "static/media/man-near-pc2.webp": "/cosy-space/static/media/man-near-pc2.3bfd5381fe77c6235f8d.webp",
-    "static/media/lounge-zone.webp": "/cosy-space/static/media/lounge-zone.ab92b7ec371c8f8473fc.webp",
     "static/media/security-system.webp": "/cosy-space/static/media/security-system.9fc4db5438e9d538d9e2.webp",
     "static/media/ps5.webp": "/cosy-space/static/media/ps5.29e9a7727c7b98349f41.webp",
+    "static/media/gorgany2.jpeg": "/cosy-space/static/media/gorgany2.521c21d4587266c6bc8a.jpeg",
+    "static/media/gorgany.jpeg": "/cosy-space/static/media/gorgany.c3e107cab8fa98c50edf.jpeg",
     "static/media/coffee-machine.jpeg": "/cosy-space/static/media/coffee-machine.f774879520b0aaa774a1.jpeg",
     "static/media/white-logo-1.png": "/cosy-space/static/media/white-logo-1.1daf746ec4fc8ac47796.png",
     "static/media/black-logo-1.png": "/cosy-space/static/media/black-logo-1.55297e18defb15975f7d.png",
     "static/media/book-now.png": "/cosy-space/static/media/book-now.247ca209044101c533af.png",
     "index.html": "/cosy-space/index.html",
-    "main.a83d883a.css.map": "/cosy-space/static/css/main.a83d883a.css.map",
-    "main.c8bc0aa0.js.map": "/cosy-space/static/js/main.c8bc0aa0.js.map",
+    "main.14bc7142.css.map": "/cosy-space/static/css/main.14bc7142.css.map",
+    "main.4040d979.js.map": "/cosy-space/static/js/main.4040d979.js.map",
     "453.37ceee0d.chunk.js.map": "/cosy-space/static/js/453.37ceee0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a83d883a.css",
-    "static/js/main.c8bc0aa0.js"
+    "static/css/main.14bc7142.css",
+    "static/js/main.4040d979.js"
   ]
 }
