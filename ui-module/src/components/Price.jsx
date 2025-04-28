@@ -14,17 +14,14 @@ function Price() {
   return (
     <div id='price' className="min-h-screen bg-[#1D1D1D] text-white p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
-        {/* Header with AOS animation */}
         <h1
           className="text-center text-[#eeba2b] text-2xl md:text-4xl font-bold my-8 md:my-12"
-          data-aos="fade-up" // Анімація для заголовка
+          data-aos="fade-up"
         >
           ЦІНОВА ПОЛІТИКА
         </h1>
 
-        {/* Pricing Cards with AOS animation */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {/* Starter Plan */}
           <div
             className="border border-white rounded-3xl p-8 flex flex-col"
             data-aos="fade-up"
@@ -48,7 +45,6 @@ function Price() {
             </button>
           </div>
 
-          {/* Pro Plan */}
           <div
             className="bg-[#eeba2b] border border-white text-black rounded-3xl p-8 flex flex-col"
             data-aos="fade-up"
@@ -74,7 +70,6 @@ function Price() {
           </div>
         </div>
 
-        {/* FAQ Section with fade-in animation */}
         <div
           className="mb-12 text-left"
           data-aos="fade-up"
