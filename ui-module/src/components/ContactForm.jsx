@@ -99,7 +99,7 @@ function ContactForm() {
                     </div>
                     <div>
                       <h4 className="text-indigo-500 font-medium text-left">PHONE</h4>
-                      <p className="text-gray-600">+380 (96) 590 02 84</p>
+                      <p className="text-gray-600">+380 (67) 581 43 80</p>
                     </div>
                   </div>
 
@@ -111,7 +111,7 @@ function ContactForm() {
                     </div>
                     <div>
                       <h4 className="text-indigo-500 font-medium text-left">PHONE</h4>
-                      <p className="text-gray-600">+380 (67) 581 43 80</p>
+                      <p className="text-gray-600">+380 (96) 590 02 84</p>
                     </div>
                   </div>
                 </div>
