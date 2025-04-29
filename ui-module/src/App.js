@@ -7,20 +7,22 @@ import Price from "./components/Price";
 import Reviews from "./components/Reviews";
 import ContactUs from "./components/ContactUs";
 import ScrollToTopButton from "./components/ScrollTopButton";
+import MaintenancePage from "./components/MaintenancePage";
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
+      <MaintenancePage />
+      {/* <Hero />
       <Features />
       <Additional />
       <Information />
       <Price />
       <Reviews />
       <ContactUs />
-      <ScrollToTopButton />
+      <ScrollToTopButton /> */}
     </div>
   );
 }
