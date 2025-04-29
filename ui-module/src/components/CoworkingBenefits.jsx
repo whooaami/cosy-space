@@ -1,6 +1,4 @@
 import React from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 import workPlaceImage from '../assets/work-place.jpg';
 import gorganyImage from '../assets/gorgany.jpeg';
@@ -10,14 +8,8 @@ import manWorkingImage from '../assets/workspaces.jpg';
 import coffeeMachineImage from '../assets/coffee-machine.jpeg';
 
 function CoworkingBenefits() {
-
-    AOS.init({
-        duration: 800,
-        once: true,
-    });
-
     return (
-        <div className="w-full bg-white">
+        <div id='advantages' className="w-full bg-white">
             <div
                 className="relative w-full h-[25vh] bg-cover"
                 style={{
@@ -103,7 +95,6 @@ function CoworkingBenefits() {
                         </p>
                     </div>
 
-                    {/* Image Grid */}
                     <div
                         className="grid grid-cols-2 gap-4"
                         data-aos="fade-left"
@@ -163,9 +154,8 @@ function CoworkingBenefits() {
                     </div>
                 </div>
 
-                {/* Infrastructure Section */}
                 <div
-                    className="mt-12 bg-yellow-500 rounded-lg p-6 max-w-5xl mx-auto"
+                    className="mt-12 bg-[#eeba2b] rounded-lg p-6 max-w-5xl mx-auto"
                     data-aos="fade-up"
                     data-aos-delay="200"
                 >

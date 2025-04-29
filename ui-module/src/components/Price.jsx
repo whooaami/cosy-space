@@ -1,28 +1,20 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 
 function Price() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1500,
-      easing: 'ease-in-out',
-      once: true,
-    });
-  }, []);
-
   return (
-    <div id='price' className="min-h-screen bg-[#1D1D1D] text-white p-4 md:p-8">
+    <section id='price' className="min-h-screen bg-[#1D1D1D] text-white p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
-        <h1
-          className="text-center text-[#eeba2b] text-2xl md:text-4xl font-bold my-8 md:my-12"
-          data-aos="fade-up"
-        >
-          ЦІНОВА ПОЛІТИКА
-        </h1>
+        <header>
+          <h1
+            className="text-center text-[#eeba2b] text-2xl md:text-4xl font-bold my-8 md:my-12"
+            data-aos="fade-up"
+          >
+            ЦІНОВА ПОЛІТИКА
+          </h1>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div
+          <article
             className="border border-white rounded-3xl p-8 flex flex-col"
             data-aos="fade-up"
             data-aos-delay="100"
@@ -43,9 +35,9 @@ function Price() {
             <button className="bg-white text-black font-bold py-3 rounded-md hover:bg-gray-200 transition">
               JOIN NOW
             </button>
-          </div>
+          </article>
 
-          <div
+          <article
             className="bg-[#eeba2b] border border-white text-black rounded-3xl p-8 flex flex-col"
             data-aos="fade-up"
             data-aos-delay="200"
@@ -67,7 +59,7 @@ function Price() {
             <button className="bg-white text-black font-bold py-3 rounded-md hover:bg-gray-200 transition">
               JOIN NOW
             </button>
-          </div>
+          </article>
         </div>
 
         <div
@@ -102,7 +94,7 @@ function Price() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
