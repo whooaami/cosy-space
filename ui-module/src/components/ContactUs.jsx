@@ -1,10 +1,9 @@
 import React from 'react';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 import ContactForm from './ContactForm';
 
 function ContactUs() {
-
   return (
     <div id="contactUs">
       <section
@@ -38,13 +37,12 @@ function ContactUs() {
       </section>
 
       <div
-        data-aos={'fade-in'}
+        data-aos="fade-in"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-          <ContactForm />
+        <ContactForm />
       </div>
-
     </div>
   );
 }

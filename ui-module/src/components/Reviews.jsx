@@ -21,7 +21,7 @@ function Reviews() {
       title: "Web Designer",
       avatar: avatar2,
       rating: 5,
-      text: "Сучасний і комфортний простір для роботи. Є все необхідне для продуктивного дня - безлімітна кава, безперебійне живлення на випадок блекаутів і швидкий інтернет. Теніс, лего, настільні ігри - все, що хочеш, якщо не хочеш працювати :) Щиро рекомендую, якщо шукаєте  класний і сучасний коворкінг для себе чи невеликої команди за адекватні гроші."
+      text: "Сучасний і комфортний простір для роботи. Є все необхідне для продуктивного дня - безлімітна кава, безперебійне живлення на випадок блекаутів і швидкий інтернет. Теніс, лего, настільні ігри - все, що хочеш, якщо не хочеш працювати :) Щиро рекомендую, якщо шукаєте класний і сучасний коворкінг для себе чи невеликої команди за адекватні гроші."
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ function Reviews() {
       title: "QA Engineer",
       avatar: avatar4,
       rating: 5,
-      text: "Рекомендую коворкінг Сosy Space як один з його користувачів! Комфортний робочий простір з усім необхідним обладнанням, відпочинковою зоною та привітними, хорошими людьми :) Найкращі рекомендації!"
+      text: "Рекомендую коворкінг Cosy Space як один з його користувачів! Комфортний робочий простір з усім необхідним обладнанням, відпочинковою зоною та привітними, хорошими людьми :) Найкращі рекомендації!"
     }
   ];
 
@@ -56,7 +56,7 @@ function Reviews() {
   return (
     <section className="bg-gray-50 py-16 min-h-screen">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
           <h1 className="text-4xl text-[#eeba2b] font-medium mb-2 uppercase tracking-wider" aria-label="Відгуки">
             ВІДГУКИ
           </h1>
@@ -69,21 +69,28 @@ function Reviews() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white p-6 rounded-lg shadow-sm"
+              className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-start"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay={`${testimonial.id * 100}`}
             >
-              <p className="text-gray-700 mb-4">{testimonial.text}</p>
-              <div className="flex items-center">
+              <div className="flex flex-col items-center mb-4 md:mr-6">
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full mr-4 object-cover"
+                  className="w-16 h-16 rounded-full object-cover mb-2"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
                 />
-                <div>
-                  <h3 className="font-medium text-gray-900">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.title}</p>
-                  <div className="flex mt-1">
-                    {renderStars(testimonial.rating)}
-                  </div>
+                <h3 className="font-medium text-gray-900">{testimonial.name}</h3>
+                <p className="text-sm text-gray-500">{testimonial.title}</p>
+              </div>
+              <div className="flex-1">
+                <p className="text-gray-700 mb-4" data-aos="fade-in" data-aos-duration="1000">
+                  {testimonial.text}
+                </p>
+                <div className="flex justify-center mt-2">
+                  {renderStars(testimonial.rating)}
                 </div>
               </div>
             </div>

@@ -26,8 +26,9 @@ function Additional() {
           <div className="w-full lg:w-1/2" data-aos="fade-left">
             <img
               src={workspacesImage}
-              alt="Робочі місця в Open Space з комфортними столами і зручними кріслами Barsky"
+              alt="Робочі місця в Open Space: зручні столи і крісла для продуктивної роботи"
               className="w-full rounded-2xl border border-white object-cover max-h-[400px]"
+              loading="lazy"
             />
           </div>
         </section>
@@ -54,6 +55,7 @@ function Additional() {
               src={securityImage}
               alt="Системи безпеки коворкінгу: охорона 24/7, відеоспостереження та біометричні замки"
               className="w-full rounded-2xl border border-white object-cover max-h-[400px]"
+              loading="lazy"
             />
           </div>
         </section>

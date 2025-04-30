@@ -6,9 +6,11 @@ import officeImage from '../assets/office.png';
 function Hero() {
   return (
     <div className="relative w-full flex flex-col">
-      <div
+      {/* Hero Section Background */}
+      <section
         className="relative w-full h-screen bg-cover bg-center bg-fixed transition-all duration-700 transform hover:scale-105"
         style={{ backgroundImage: `url(${spaceImage})` }}
+        aria-label="Background with space theme"
       >
         <div className="absolute inset-0 bg-black bg-opacity-70 transition-opacity duration-500" />
 
@@ -16,7 +18,7 @@ function Hero() {
           <div className="flex flex-col items-center mb-16">
             <img
               src={officeImage}
-              alt="Office"
+              alt="Modern office workspace with ergonomic furniture"
               className="w-32 md:w-40 lg:w-48 mb-2 transition-transform transform hover:scale-105"
               data-aos="fade-up"
             />
@@ -38,48 +40,12 @@ function Hero() {
             data-aos-delay="600"
           />
         </div>
-      </div>
+      </section>
 
-      <div className="w-full bg-white py-16 flex flex-col items-center">
-        <div
-          className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 border-2 border-white text-center text-white shadow-lg relative -mt-32 md:-mt-40 rounded-3xl transition-all"
-          style={{ backgroundColor: '#eeba2b' }}
-          data-aos="fade-up"
-        >
-          <h2
-            className="text-2xl md:text-3xl lg:text-4xl font-bold mt-4 mb-2"
-            data-aos="fade-in"
-            data-aos-delay="600"
-          >
-            CO-WORKING
-          </h2>
-
-          <div className="my-4 border-t border-white w-1/3 mx-auto" />
-
-          <p
-            className="mt-2 text-xl md:text-2xl font-light"
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
-            ЗАТИШНИЙ<br />
-            ПРОСТІР ДЛЯ<br />
-            ТВОГО РОЗВИТКУ!
-          </p>
-
-          <div className="my-4 border-t border-white w-1/3 mx-auto" />
-
-          <div
-            className="mt-6"
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-          >
-            <div className="bg-black text-white py-2 px-8 inline-block">
-              <div className="text-sm md:text-base">+380 67 581 43 80</div>
-              <div className="text-xs md:text-sm">COSY-SPACE.COM</div>
-            </div>
-          </div>
-        </div>
-
+      {/* Yellow Rectangle */}
+      <section className="w-full bg-white py-16 flex flex-col items-center">
+        <YellowBox />
+        
         <div
           className="w-full max-w-4xl mx-auto mt-20 px-4 text-center"
           data-aos="fade-up"
@@ -97,9 +63,56 @@ function Hero() {
           </p>
           <div className="w-full max-w-md mx-auto border-t mt-12" style={{ borderBlockColor: '#1D1D1D' }} />
         </div>
-      </div>
+      </section>
     </div>
   );
 }
+
+// Жовтий прямокутник як окремий компонент
+const YellowBox = () => (
+  <div
+    className="w-11/12 md:w-3/4 lg:w-2/3 xl:w-[750px] p-6 md:p-8 border-2 border-white text-center text-white shadow-lg relative rounded-3xl transition-all duration-700"
+    style={{
+      backgroundColor: '#eeba2b',
+      visibility: 'visible',  // Переконатися, що елемент видимий
+      opacity: 1, // Встановлює плавне відображення
+      transition: 'opacity 0.5s ease-in-out', // Плавна анімація
+    }}
+    data-aos="fade-up"
+  >
+    <h2
+      className="text-2xl md:text-3xl lg:text-4xl font-bold mt-4 mb-2"
+      data-aos="fade-in"
+      data-aos-delay="600"
+    >
+      CO-WORKING
+    </h2>
+
+    <div className="my-4 border-t border-white w-1/3 mx-auto" />
+
+    <p
+      className="mt-2 text-xl md:text-2xl font-light"
+      data-aos="fade-up"
+      data-aos-delay="800"
+    >
+      ЗАТИШНИЙ<br />
+      ПРОСТІР ДЛЯ<br />
+      ТВОГО РОЗВИТКУ!
+    </p>
+
+    <div className="my-4 border-t border-white w-1/3 mx-auto" />
+
+    <div
+      className="mt-6"
+      data-aos="zoom-in"
+      data-aos-delay="1000"
+    >
+      <div className="bg-black text-white py-2 px-8 inline-block">
+        <div className="text-sm md:text-base">+380 67 581 43 80</div>
+        <div className="text-xs md:text-sm">COSY-SPACE.COM</div>
+      </div>
+    </div>
+  </div>
+);
 
 export default Hero;
