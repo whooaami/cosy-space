@@ -1,9 +1,4 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import 'aos/dist/aos.css';
 
 import workPlaceImage from '../assets/work-place.jpg';
@@ -18,6 +13,7 @@ import workPlaceImage1 from '../assets/gallery-images/work-places.jpg';
 import workPlaceImage2 from '../assets/gallery-images/work-places-1.webp';
 import workPlaceImage3 from '../assets/gallery-images/work-places-2.jpg';
 import workPlaceImage4 from '../assets/gallery-images/work-places-3.jpg';
+import airConditionerImage from '../assets/gallery-images/air-conditioner.webp';
 import workManImage1 from '../assets/gallery-images/work-man.webp';
 import workManImage2 from '../assets/gallery-images/work-man-1.webp';
 import workGirlImage from '../assets/gallery-images/work-girl.webp';
@@ -37,13 +33,14 @@ const images = [
   { src: workPlaceImage2, alt: 'Workplace 2' },
   { src: workPlaceImage3, alt: 'Workplace 3' },
   { src: workPlaceImage4, alt: 'Workplace 4' },
+  { src: airConditionerImage, alt: 'Air conditioner' },
   { src: workManImage1, alt: 'Workman 1' },
   { src: workManImage2, alt: 'Workman 2' },
   { src: workGirlImage, alt: 'Workgirl' },
   { src: mapImage, alt: 'Map of Ukraine' },
-  { src: tennisImage, alt: 'Tennis players' },
-  { src: tvImage, alt: 'TV area' },
-  { src: ps5Image, alt: 'PS5 area' },
+  { src: tennisImage, alt: 'Tennis' },
+  { src: tvImage, alt: 'Lounge zone' },
+  { src: ps5Image, alt: 'Lounge zone' },
   { src: kitchenImage1, alt: 'Kitchen area 1' },
   { src: coffeeMachineImage, alt: 'Coffee machine' },
   { src: kitchenImage2, alt: 'Kitchen area 2' },
@@ -142,35 +139,41 @@ function CoworkingBenefits() {
         </div>
       </div>
 
-      <section id='gallery' className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-8 max-w-7xl mx-auto">
-        <div>
-          <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            loop
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-            className="rounded-xl shadow-xl"
-          >
-            {images.map((img, idx) => (
-              <SwiperSlide key={idx}>
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-                  data-aos="zoom-in"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+      <section
+        id="gallery"
+        className="w-full px-4 sm:px-6 md:px-12 lg:px-24 py-12 max-w-7xl mx-auto"
+      >
+        <h2
+          className="text-3xl md:text-4xl font-bold text-center mb-10"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          Галерея простору
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {images.map((img, idx) => (
+            <div
+              key={idx}
+              className="relative overflow-hidden rounded-xl shadow-lg group h-64"
+              data-aos="zoom-in"
+              data-aos-delay={idx * 50}
+            >
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-white text-sm md:text-base font-medium bg-black bg-opacity-60 px-3 py-1 rounded-full border border-white">
+                  {img.alt}
+                </span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
+
     </div>
   );
 }

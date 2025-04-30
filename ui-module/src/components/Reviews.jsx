@@ -4,35 +4,35 @@ function Reviews() {
   const testimonials = [
     {
       id: 1,
-      name: "William Anderson",
+      name: "Юра",
       title: "Web Designer",
       avatar: "https://gravatar.com/images/homepage/avatar-01.png",
       rating: 5,
-      text: "OceanWP theme has helped my WooCommerce website. This template lets me start a camera store and customize it all in minutes."
+      text: "Люблю це місце! Приємно, затишно та стильно. Є куточки, де можна розвантажитись від роботи різноманітним дозвіллям. Чудова інфраструктура, з кафе, кав'ярнями, піцеріями, та маркетами. Привабливі тарифи та можливість оренди ПК. Безпека та гнучкий доступ роботи. Рекомендую для продуктивного робочого дня!"
     },
     {
       id: 2,
-      name: "Mark Wolf",
+      name: "Віра",
       title: "Web Designer",
       avatar: "https://gravatar.com/images/homepage/avatar-04.png",
       rating: 5,
-      text: "OceanWP WordPress theme has really helped propel my eCommerce website. With the use of templates, I can start my brand new store within minutes and customize it completely from top to bottom."
+      text: "Сучасний і комфортний простір для роботи. Є все необхідне для продуктивного дня - безлімітна кава, безперебійне живлення на випадок блекаутів і швидкий інтернет. Теніс, лего, настільні ігри - все, що хочеш, якщо не хочеш працювати :) Щиро рекомендую, якщо шукаєте  класний і сучасний коворкінг для себе чи невеликої команди за адекватні гроші."
     },
     {
       id: 3,
-      name: "Olivia Rodriguez",
+      name: "Павло",
       title: "Web Designer",
       avatar: "https://gravatar.com/images/homepage/avatar-02.png",
       rating: 5,
-      text: "OceanWP WordPress theme has really helped propel my eCommerce website. With the use of templates, I can start my brand new store within minutes and customize it completely from top to bottom."
+      text: "Простір продуманий до дрібниць: зручні робочі місця, швидкий інтернет, тиша — все, що потрібно для продуктивної роботи. Приємна атмосфера, привітний персонал і завжди чисто. Є зони для відпочинку та кухня з кавою, що особливо радує під час насиченого робочого дня. Також великий плюс — розташування та гнучкі тарифи. Ідеальне місце як для фрилансерів, так і для команд. Рекомендую!"
     },
     {
       id: 4,
-      name: "Emma Johnson",
+      name: "Андрій",
       title: "Web Designer",
       avatar: "https://gravatar.com/images/homepage/avatar-07.png",
       rating: 5,
-      text: "OceanWP theme has helped my WooCommerce website. This template lets me start a camera store and customize it all in minutes."
+      text: "Рекомендую коворкінг Сosy Space як один з його користувачів! Комфортний робочий простір з усім необхідним обладнанням, відпочинковою зоною та привітними, хорошими людьми :) Найкращі рекомендації!"
     }
   ];
 
