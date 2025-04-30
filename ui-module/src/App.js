@@ -11,6 +11,7 @@ import ContactUs from "./components/ContactUs";
 import ScrollToTopButton from "./components/ScrollTopButton";
 import CoworkingInfo from "./components/CoworkingInfo";
 import CoworkingBenefits from "./components/CoworkingBenefits";
+import Footer from './components/Footer';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Price />
       <Reviews />
       <ContactUs />
+      <Footer />
       <ScrollToTopButton />
     </div>
   );
