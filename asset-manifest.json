@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cosy-space/static/css/main.c83ff4b3.css",
-    "main.js": "/cosy-space/static/js/main.b95d239f.js",
+    "main.css": "/cosy-space/static/css/main.a788fc63.css",
+    "main.js": "/cosy-space/static/js/main.56f14037.js",
     "static/js/453.37ceee0d.chunk.js": "/cosy-space/static/js/453.37ceee0d.chunk.js",
     "static/media/work-place.jpg": "/cosy-space/static/media/work-place.e51bc7f1fdf35e09bcbe.jpg",
     "static/media/workspaces.jpg": "/cosy-space/static/media/workspaces.8865b97c4ba593466a45.jpg",
@@ -23,20 +23,21 @@
     "static/media/kitchen-1.webp": "/cosy-space/static/media/kitchen-1.3f186b221cf0d4802c51.webp",
     "static/media/hall.webp": "/cosy-space/static/media/hall.1bef4fd0573a3f4f2070.webp",
     "static/media/tennis-players.webp": "/cosy-space/static/media/tennis-players.dca340bc2256bf6295cd.webp",
+    "static/media/air-conditioner.webp": "/cosy-space/static/media/air-conditioner.c9536fdbb29ce9464f9e.webp",
     "static/media/gorgany.jpeg": "/cosy-space/static/media/gorgany.c3e107cab8fa98c50edf.jpeg",
     "static/media/work-man.webp": "/cosy-space/static/media/work-man.e8b4951c85f8ad18ba93.webp",
     "static/media/kitchen.webp": "/cosy-space/static/media/kitchen.dcaf5089f86f33e5f72c.webp",
     "static/media/tv.webp": "/cosy-space/static/media/tv.9666b7396e608085b60d.webp",
-    "static/media/white-logo-1.png": "/cosy-space/static/media/white-logo-1.1daf746ec4fc8ac47796.png",
-    "static/media/black-logo-1.png": "/cosy-space/static/media/black-logo-1.55297e18defb15975f7d.png",
+    "static/media/black-logo-1.png": "/cosy-space/static/media/black-logo-1.1daf746ec4fc8ac47796.png",
+    "static/media/white-logo-1.png": "/cosy-space/static/media/white-logo-1.55297e18defb15975f7d.png",
     "static/media/book-now.png": "/cosy-space/static/media/book-now.247ca209044101c533af.png",
     "index.html": "/cosy-space/index.html",
-    "main.c83ff4b3.css.map": "/cosy-space/static/css/main.c83ff4b3.css.map",
-    "main.b95d239f.js.map": "/cosy-space/static/js/main.b95d239f.js.map",
+    "main.a788fc63.css.map": "/cosy-space/static/css/main.a788fc63.css.map",
+    "main.56f14037.js.map": "/cosy-space/static/js/main.56f14037.js.map",
     "453.37ceee0d.chunk.js.map": "/cosy-space/static/js/453.37ceee0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c83ff4b3.css",
-    "static/js/main.b95d239f.js"
+    "static/css/main.a788fc63.css",
+    "static/js/main.56f14037.js"
   ]
 }
