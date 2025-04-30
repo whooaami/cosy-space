@@ -1,12 +1,17 @@
 import React from "react";
 
+import avatar1 from "../assets/review-images/yura-avatar.webp";
+import avatar2 from "../assets/review-images/vira-avatar.webp";
+import avatar3 from "../assets/review-images/pavlo-avatar.webp";
+import avatar4 from "../assets/review-images/andriy-avatar.webp";
+
 function Reviews() {
   const testimonials = [
     {
       id: 1,
       name: "Юра",
-      title: "Web Designer",
-      avatar: "https://gravatar.com/images/homepage/avatar-01.png",
+      title: "CEO of IT company",
+      avatar: avatar1,
       rating: 5,
       text: "Люблю це місце! Приємно, затишно та стильно. Є куточки, де можна розвантажитись від роботи різноманітним дозвіллям. Чудова інфраструктура, з кафе, кав'ярнями, піцеріями, та маркетами. Привабливі тарифи та можливість оренди ПК. Безпека та гнучкий доступ роботи. Рекомендую для продуктивного робочого дня!"
     },
@@ -14,23 +19,23 @@ function Reviews() {
       id: 2,
       name: "Віра",
       title: "Web Designer",
-      avatar: "https://gravatar.com/images/homepage/avatar-04.png",
+      avatar: avatar2,
       rating: 5,
       text: "Сучасний і комфортний простір для роботи. Є все необхідне для продуктивного дня - безлімітна кава, безперебійне живлення на випадок блекаутів і швидкий інтернет. Теніс, лего, настільні ігри - все, що хочеш, якщо не хочеш працювати :) Щиро рекомендую, якщо шукаєте  класний і сучасний коворкінг для себе чи невеликої команди за адекватні гроші."
     },
     {
       id: 3,
       name: "Павло",
-      title: "Web Designer",
-      avatar: "https://gravatar.com/images/homepage/avatar-02.png",
+      title: "e-Learning developer",
+      avatar: avatar3,
       rating: 5,
       text: "Простір продуманий до дрібниць: зручні робочі місця, швидкий інтернет, тиша — все, що потрібно для продуктивної роботи. Приємна атмосфера, привітний персонал і завжди чисто. Є зони для відпочинку та кухня з кавою, що особливо радує під час насиченого робочого дня. Також великий плюс — розташування та гнучкі тарифи. Ідеальне місце як для фрилансерів, так і для команд. Рекомендую!"
     },
     {
       id: 4,
       name: "Андрій",
-      title: "Web Designer",
-      avatar: "https://gravatar.com/images/homepage/avatar-07.png",
+      title: "QA Engineer",
+      avatar: avatar4,
       rating: 5,
       text: "Рекомендую коворкінг Сosy Space як один з його користувачів! Комфортний робочий простір з усім необхідним обладнанням, відпочинковою зоною та привітними, хорошими людьми :) Найкращі рекомендації!"
     }
