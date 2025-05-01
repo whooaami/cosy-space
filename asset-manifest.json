@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cosy-space/static/css/main.b86d0feb.css",
-    "main.js": "/cosy-space/static/js/main.d8733ea9.js",
+    "main.css": "/cosy-space/static/css/main.c252a312.css",
+    "main.js": "/cosy-space/static/js/main.069d73f4.js",
     "static/js/453.23cb2b67.chunk.js": "/cosy-space/static/js/453.23cb2b67.chunk.js",
     "static/media/work-place.jpg": "/cosy-space/static/media/work-place.e51bc7f1fdf35e09bcbe.jpg",
     "static/media/workspaces.jpg": "/cosy-space/static/media/workspaces.8865b97c4ba593466a45.jpg",
@@ -35,12 +35,12 @@
     "static/media/andriy-avatar.webp": "/cosy-space/static/media/andriy-avatar.9519a941cf51823b2b3f.webp",
     "static/media/white-logo-1.png": "/cosy-space/static/media/white-logo-1.55297e18defb15975f7d.png",
     "index.html": "/cosy-space/index.html",
-    "main.b86d0feb.css.map": "/cosy-space/static/css/main.b86d0feb.css.map",
-    "main.d8733ea9.js.map": "/cosy-space/static/js/main.d8733ea9.js.map",
+    "main.c252a312.css.map": "/cosy-space/static/css/main.c252a312.css.map",
+    "main.069d73f4.js.map": "/cosy-space/static/js/main.069d73f4.js.map",
     "453.23cb2b67.chunk.js.map": "/cosy-space/static/js/453.23cb2b67.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b86d0feb.css",
-    "static/js/main.d8733ea9.js"
+    "static/css/main.c252a312.css",
+    "static/js/main.069d73f4.js"
   ]
 }
