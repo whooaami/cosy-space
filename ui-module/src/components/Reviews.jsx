@@ -69,7 +69,7 @@ function Reviews() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-start"
+              className="bg-white p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-center md:items-start"
               data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-delay={`${testimonial.id * 100}`}

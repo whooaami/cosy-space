@@ -75,7 +75,7 @@ function ContactForm() {
                     </div>
                     <div>
                       <h4 className="text-indigo-500 font-medium text-left">ADDRESS</h4>
-                      <p className="text-gray-600">Львів, Стрийська 113Г</p>
+                      <p className="text-gray-600">Львів, Стрийська 113В</p>
                     </div>
                   </div>
 

@@ -9,10 +9,9 @@ function Footer() {
                 className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left"
                 data-aos="fade-up"
             >
-                {/* Logo & Description */}
                 <div>
                     <img
-                        src={whiteLogo} // заміни на своє
+                        src={whiteLogo}
                         alt="Cosy Space Logo"
                         className="w-32 mx-auto md:mx-0 mb-4 hover:scale-105 transition-transform duration-300"
                     />
@@ -21,7 +20,6 @@ function Footer() {
                     </p>
                 </div>
 
-                {/* Navigation */}
                 <div>
                     <h3 className="text-lg font-semibold mb-4 text-white">Навігація</h3>
                     <ul className="space-y-2 text-sm">
